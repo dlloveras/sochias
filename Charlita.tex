@@ -1,0 +1,506 @@
+%\documentclass[handout]{beamer}
+\documentclass{beamer}
+
+\usepackage{color}
+\usepackage{beamerthemesplit}
+\usepackage[utf8]{inputenc}
+
+%\usetheme{Malmoe}
+%\usetheme{CambridgeUS}
+%\usetheme{Hannover}
+
+% Tema Simple
+\usetheme[height=0.35cm]{Madrid}
+
+% El que uso habitualmente:
+%\usetheme[height=0.7cm]{Rochester}
+
+% A dark look
+%\usecolortheme{beetle}
+\usecolortheme{dolphin}
+
+\setbeamertemplate{navigation symbols}{} 
+
+%\usepackage{wrapfig}
+\setbeamercovered{transparent}
+
+\usepackage{geometry}
+%\geometry{landscape}
+\usepackage{multimedia}
+
+\usepackage{bm}%bold matH
+
+%\usepackage{shade}
+\usepackage{fancybox}
+ 
+\usepackage{amssymb}
+
+\input{Definiciones.coloquio}
+%\input{Definiciones.charla}
+
+
+\vspace*{-0.75 cm}
+\title[3D Solar Corona]{\bf Estudio Comparativo de M\'inimos Solares con Telescopios EUV}
+\author[D. Lloveras]
+       {{\bf Diego G. Lloveras}\inst{1}\\
+       \vskip 0.1cm
+       {
+       A.M. Vásquez \inst{1},F. Nuevo\inst{1} y R.A. Frazin\inst{2}
+       }
+      % \\
+       }
+  \institute[IAFE]
+  {
+  \inst{1}
+  Instituto de Astronom\'{\i}a y F\'{\i}sica del Espacio \textcolor{blue}{(IAFE)} \\ 
+  CONICET-UBA, Ciudad de Buenos Aires, Argentina
+%  \and
+%  \inst{2}
+%  Lockheed Martin Solar \& Astrophysics Lab \textcolor{blue}{(LMSAL)}\\
+%  Advanced Technology Center, Palo Alto - California, EEUU
+  \and
+  \inst{2}
+  Dept. of Atmospheric, Oceanic and Space Sciences \textcolor{blue}{(AOSS)}\\
+  University of Michigan, Ann Arbor - Michigan, EEUU
+  \salto
+%  \vspace{-0.25cm}
+  \begin{center}
+\framebox{\includegraphics[height=0.15\linewidth]{figuras/logo_IAFE.eps}}
+%\framebox{\includegraphics[height=0.1\linewidth]{logo_LMSAL.eps}}
+\framebox{\includegraphics[height=0.15\linewidth]{figuras/logo_AOSS.eps}}
+\salto
+{\bf AAA \textbar \ September-2016 \textbar \ San Juan}
+\end{center}
+  }
+
+\begin{document}
+
+%Pagina Inicial
+\frame{\titlepage}
+
+%-------------------> INTRODUCCION <----------------------------------------------------
+
+\frame{
+\titulo{La Corona y la relación Sol-Tierra}
+\scriptsize
+\framebox{\includegraphics[width=\linewidth]{figuras/Sun-Earth.eps}}
+\begin{center}
+La observación y el modelado de la Corona solar resulta de gran relevancia para el entendimiento de la relación Sol-Tierra, ya que en la Corona es donde el viento solar es calentado, acelerado y tienen lugar eventos impulsivos como eyecciones de masa coronal, flares, etc.
+
+%Being the place where the solar wind is heated and accelerated, and impulsive events as solar flares and coronal mass ejections are released, observation and modeling of the Solar Corona is of great relevance to advance our understanding of the Sun-Earth environment.
+\end{center}
+}
+%-------------------------------------------------------------------
+
+\frame{
+\titulo{Estructura del Sol}
+\scriptsize
+\begin{columns}
+\column{0.5\textwidth}
+%\ \hskip 1cm \azul{Interior}
+%\begin{itemize}
+%\item Core (T$\approx 15$\, MK)
+%\item Radiative Z. (T$\approx 10-0.5$\, MK)
+%\item Convective Z. (T$\approx 0.5\,{\rm MK} - 6.5$\, kK)
+%\end{itemize}
+\vspace{0.55cm}
+\begin{center}
+{\includegraphics[width=0.9\textwidth]{figuras/SolarStructure.eps}}
+\end{center}
+\column{0.55\textwidth}
+\ \hskip 1cm \azul{Atmosphere}
+\begin{itemize}
+\item Photosphere (T $\approx 5.5$\, kK, $n \approx 10^{17}\ {\rm cm}^{-3}$)
+\item Chromosphere (T $\approx 20$\, kK, $n \approx 10^{11}\ {\rm cm}^{-3}$)
+\item Transition Region (Espesor 100 km)
+\item Corona (T $\approx 1-10$\, MK, $n \approx 10^{10-7}\ {\rm cm}^{-3}$)
+\end{itemize}
+\begin{center}
+{\includegraphics[width=0.675\textheight]{figuras/region_transicion_fede.eps}}
+\end{center}
+\end{columns}
+}
+%---------------------------------------------------------------------------
+\frame{
+\titulo{Baja corona}
+\footnotesize
+\vspace{-0.25cm}
+\begin{itemize}
+ \item La baja corona emite eficientemente en el rango EUV.\\
+% The corona is \azul{optically thin} in the UV, \azul{EUV}, X, \azul{WL} ranges.\\
+Las imágenes son proyecciones 2D de estructuras emisoras 3D.
+%Images are thus 2D projections of the underlying 3D emitting structure.
+% \salto
+% \item El plasma emisor es governado por el \azul{campo magn\'etico coronal} congelado a la materia, para el cual {no se dispone de mediciones} (que son fotosf\'ericas).
+ \mediosalto
+\item Los modelos físicos necesitan información 3D coronal de parámetros $N_e, T_e$.
+%Advancement of physical models is in need of 3D information of the coronal fundamental parameters ${\bf B}, N_e, T_e$.
+\end{itemize}
+\vspace{0.35cm}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{center}
+{\includegraphics[height=0.9\textwidth]{figuras/aia_193_fullsun.eps}}
+%\azul{\bf Stereoscopy}
+%{\includegraphics[height=0.65\textwidth]{figuras/aia_171_loops.eps}}
+%\\
+%By studying the \azul{2D shape of EUV loops from 2 view points} it infers the 3D geometry of their "frozen-in" magnetic loops.
+\end{center}
+\column{0.5\textwidth}
+%\begin{center}
+\azul{\bf Tomografía}\\
+\vspace{0.15cm}
+%{\includegraphics[height=0.7\textwidth]{figuras/aia_193_fullsun.eps}}
+Invierte una serie temporal de imágenes EUV permitiendo inferir la distribución 3D de $N_e$ y $T_e$ en la baja corona.\\
+(Frazin et al. 2005)
+%By inverting for the \azul{3D EUV emissivity from time series of images} it allows inferring the 3D $N_e$ and $T_e$ of the global corona.
+%\end{center}
+\end{columns}
+}
+
+%----------------> TOMOGRAFIA <------------------------------------------------------
+{
+\setbeamercolor{normal text}{fg=white}
+\setbeamercolor{frametitle}{fg=white}
+\usebeamercolor[fg]{normal text}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{figuras/Hathaway_NASA_MSFC.eps}}
+\frame{
+
+}
+}
+%------------------------------------------------------------------------------------
+{
+\setbeamercolor{normal text}{fg=white}
+\setbeamercolor{frametitle}{fg=white}
+\usebeamercolor[fg]{normal text}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{figuras/orbits.eps}}
+\frame{
+\titulo{Full-Sun EUV Space Telescopes}
+\scriptsize
+\vspace{-1.75cm}
+\begin{center}
+%\begin{itemize}
+%\item
+Extreme ultraviolet Imaging Telescope {\bf (EIT)}\\ 
+Solar and Heliospheric Observatory {\bf(SOHO)}\\
+1996-2005. Sun-Earth L1 orbit.
+%\salto
+%\item
+%Transition Region And Coronal Explorer \azul{(TRACE)}. 1998-2010.\\
+%Sun-synchronous low Earth orbit (LEO).
+\salto
+%\item
+Extreme UltraViolet Imager {\bf (EUVI)}\\
+Solar TErrestrial RElations Observatory {\bf(STEREO)}\\ 
+2007-2023. Two 1AU orbits behind and ahead Earth.
+\salto
+%\item
+%Atmospheric Imaging Assembly {\bf (AIA)}\\ 
+%Solar Dynamics Observatory {\bf(SDO)}\\ 
+%2010-2020. Geosynchronic orbit around Earth.
+%\end{itemize}
+\end{center}
+\vspace{-0.5cm}
+\begin{table}[ht]
+%\begin{center}
+\begin{tabular}{llll}
+\hline
+Instrument & EIT  & EUVI \\%& AIA\\
+\hline
+\# Coronal Bands & 3  & 3  \\%& 6\\
+Temperature range (MK) & 
+[0.5,3.0] & [0.5,3.0] \\%& [0.5,15]\\
+%F.O.V. (\rsun) & 2.8  & 3.4 \\% & 2.6 \\
+%Image size & $1024^2$ & $2048^2$ & $4096^2$\\
+%Resolution [arc sec; $10^{-3}$\rsun]  & 2.6 & 1.6 & 0.6\\
+\hline
+\end{tabular}
+%\end{center}
+\end{table}
+}
+}
+%-------------------------------------------------------
+\frame{
+\titulo{Intensidad específica y pasabandas}
+\footnotesize
+\begin{columns}
+\column{0.5\textwidth}
+\begin{center}
+Señal del pixel $j$ de la banda $k$\\
+$ I_{k,j} = \int \mathrm{d}\lambda  \ J_j(\lambda)  \ \phi_k(\lambda) $\\
+~[ph / sec]
+{\includegraphics[width=0.8\linewidth]{figuras/all_wave_a.eps}}\\
+Intensidad específica $J_j(\lambda)$\\
+~[ph/\cmsq \,sr\,sec\,\AA]
+\end{center}
+\column{0.5\textwidth}
+\begin{center}
+Los pasabandas $\phi_k$\\
+seleccionan líneas de Fe
+\end{center}
+{\includegraphics[width=0.99\linewidth]{figuras/euvi_bandpasses.eps}}
+\begin{center}
+Temperaturas características:\\
+1.0, 1.5, 2.0 MK
+\end{center}
+\end{columns}
+}
+%-------------------------------------------------------------------
+\frame{
+\titulo{El problema tomográfico}
+\footnotesize
+%\begin{itemize}
+%\item
+%The Coronal volume is discretized over the FOV, 1.00$\rightarrow$1.25 \rsun.\\
+%\azul{\# Cells:} $\azul{I}\,=\,25\times90\times180\sim\ \azul{4\times10^5}$
+%\mediosalto
+%Typical cell-size:\ \ 0.01\,\rsun\,$\times$ 2\deg $\times$ 2\deg \ $\sim$ \ $7\times10^3$km $\times$ %($25\times10^3$km)$^2$
+%\salto
+%\azul{\# Pixels:} $\azul{J}\,=\,512^2\times4\times27.5\times0.7\sim\ \azul{2\times10^7}$
+%\salto
+\begin{columns}
+\column{0.225\textwidth}
+\begin{center}
+360\deg\\   
+{\includegraphics[width=0.99\linewidth]
+{figuras/20081117.0906.B.S1.195.norot.1024.DNSEC.DESPIKE-tn8.Norm-Ck0.rs.b4.fts.eps}}
+\end{center}
+\column{0.225\textwidth}
+\begin{center}
+270\deg\\
+{\includegraphics[width=0.99\linewidth]
+{figuras/20081123.2106.B.S1.195.norot.1024.DNSEC.DESPIKE-tn8.Norm-Ck0.rs.b4.fts.eps}}
+\end{center}
+\column{0.225\textwidth}
+\begin{center}
+180\deg\\
+{\includegraphics[width=0.99\linewidth]
+{figuras/20081130.1506.B.S1.195.norot.1024.DNSEC.DESPIKE-tn8.Norm-Ck0.rs.b4.fts.eps}}
+\end{center}
+\column{0.225\textwidth}
+\begin{center}
+90\deg\\
+{\includegraphics[width=0.99\linewidth]
+{figuras/20081207.0906.B.S1.195.norot.1024.DNSEC.DESPIKE-tn8.Norm-Ck0.rs.b4.fts.eps}}
+\end{center}
+\end{columns}
+\begin{itemize}
+\item
+Discretizando la intensidad en cada banda $k$:
+$$
+\azul{I_{k,j}} = \azul{
+\int_{\mathrm{LOS}} \mathrm{d}l} \ 
+\rojo{FBE_k \left(\azul{\br_j(l)}\right)}
+\ \ \rightarrow \ \
+\azul{\bI_k} = \azul{\bL_k\,\cdotp\,} \rojo{{\bf FBE}_k} %+ \bn_k
+$$
+\end{itemize}
+
+{\includegraphics[width=0.99\linewidth]
+{figuras/195_otuput_tomo.eps}}
+}
+
+%-----------------------------------------------------------
+\frame{
+\titulo{Resultados tomográficos 3D}
+\scriptsize
+\begin{columns}
+\column{0.35\textwidth}
+\begin{center}
+Emisividades de Banda (FBE)\\
+\vskip 0.25cm
+{\includegraphics[width=\linewidth]{figuras/FBE-EUVI-171.eps}}
+{\includegraphics[width=\linewidth]{figuras/FBE-EUVI-195.eps}}
+{\includegraphics[width=\linewidth]{figuras/FBE-EUVI-284.eps}}
+\end{center}
+\column{0.3\textwidth}
+\tiny
+$\azul{FBE_{k,i} }  =  \azul{\int \mathrm{d}T \  R_k(T)  \rojo{{\sf LDEM}_i(T)} }$.
+\vskip 0.25cm
+Tomando los momentos de la \rojo{${\sf LDEM}_i(T)$}:\\
+\vskip 0.25cm
+$\left< N_e^2\right>_i = \int \mathrm{d} T \ \, \rojo{{\sf LDEM}_i(T)}$\\
+\vskip 0.25cm
+$T_{m,i}   = \frac{1}{\left< N_e^2\right>_i } \int \mathrm{d}T\ T \ \, \rojo{{\sf LDEM}_i(T)}$\\
+\vskip 0.25cm
+\frame{\includegraphics[width=\linewidth]{figuras/LDEM.eps}}
+\column{0.35\textwidth}
+\scriptsize
+\begin{center}
+Densidad\\
+{\includegraphics[width=\linewidth]{figuras/Ne-2081-EUVI-l075.eps}}\\
+Temperatura\\
+{\includegraphics[width=\linewidth]{figuras/Tm-2081-EUVI-l075.eps}}\\
+$R=\frac{1}{N}\sum_{k=1}^N |1-E_{k,syn}/E_{k,tom}|$\\
+{\includegraphics[width=\linewidth]{figuras/R-2081-EUVI-l075.eps}}
+\end{center}
+\end{columns}
+}
+
+%------------------------------------------------------------
+\frame{ 
+\vspace{-0.15cm}
+\titulo{Magnetograma y extrapolación coronal}
+\footnotesize
+\begin{columns}
+\column{0.5\textwidth}
+\begin{center}
+{\includegraphics[width=0.8\textwidth]{figuras/magnetograma_gris.eps}}
+{\includegraphics[width=0.9\linewidth]{figuras/aNe.eps}}
+%\begin{equation}
+% N_e(r) = N_{e,1}\, \exp{[-(h/\l)/(r/\mrsun)]}
+%\end{equation}
+\end{center}
+\column{0.5\textwidth}
+\begin{center}
+{\includegraphics[width=0.8\textwidth]{figuras/CR2081-PFSS.eps}}
+{\includegraphics[width=0.9\linewidth]{figuras/aTm.eps}}
+%\begin{equation}
+% T(r) = a r + b
+% \end{equation}
+\end{center}
+\end{columns}
+}
+
+%-------------------> 
+\frame{ 
+\vspace{-0.05cm}
+\titulo{Comparación de mínimos}
+\footnotesize
+\begin{columns}
+\column{0.5\textwidth}
+\hfil Marzo - 2009
+{\includegraphics[width=0.86\textwidth]{figuras/Ne_1105_cr2081l075_ldem_v3_errorbox_base_test.eps}}
+%\hskip 0.1cm
+{\includegraphics[width=0.86\textwidth]{figuras/Tm_1105_cr2081l075_ldem_v3_errorbox_base_test.eps}}\\
+{\includegraphics[width=0.86\textwidth]{figuras/R_1105_cr2081l075_ldem_v3_errorbox_base_test.eps}}
+\column{0.5\textwidth}
+\hfil Octubre - 1996
+{\includegraphics[width=0.86\textwidth]{figuras/Ne_1105_cr1915l075_ldem_v3_errorbox_base_test.eps}}
+%\hskip 0.1cm
+{\includegraphics[width=0.86\textwidth]{figuras/Tm_1105_cr1915l075_ldem_v3_errorbox_base_test.eps}}\\
+{\includegraphics[width=0.86\textwidth]{figuras/R_1105_cr1915l075_ldem_v3_errorbox_base_test.eps}}
+\end{columns}
+}
+%-----------------------------------------
+\frame{
+\titulo{Comparación Cuantitativa}
+\footnotesize
+\hfil Marzo - 2009 \hfil Octubre - 1996
+\begin{center}
+%Identification of Diverse Coronal Regions\\
+{\includegraphics[width=0.49\textwidth]{figuras/Rpoint-map_1105_5colores_paper_euvi_v3.eps}}
+{\includegraphics[width=0.49\textwidth]{figuras/Rpoint-map_1105_5colores_paper_eit_v3.eps}}
+\vskip 0.15cm
+Equatorial Streamer\\
+{\includegraphics[width=0.32\textwidth]{figuras/test_compa_EUVI_EIT_newzones_todo_cap3_v1_lowlat_Nebasal.eps}}
+{\includegraphics[width=0.32\textwidth]{figuras/test_compa_EUVI_EIT_newzones_todo_cap3_v1_lowlat_lambda_N.eps}}
+{\includegraphics[width=0.32\textwidth]{figuras/test_compa_EUVI_EIT_newzones_todo_cap3_v1_lowlat_Te.eps}}
+\vskip 0.1cm
+%Southern Coronal Hole\\
+%{\includegraphics[width=0.32\textwidth]{figuras/test_compa_EUVI_EIT_newzones_todo_cap3_v1_open_S_Nebasal_H.eps}}
+%{\includegraphics[width=0.32\textwidth]{figuras/test_compa_EUVI_EIT_newzones_todo_cap3_v1_open_S_lambda_N_H.eps}}
+%{\includegraphics[width=0.32\textwidth]{figuras/test_compa_EUVI_EIT_newzones_todo_cap3_v1_open_S_Te_H.eps}}
+\end{center}
+}
+%--------------------------------------------
+
+\frame{
+\titulo{Estructuras de temperatura}
+\footnotesize
+\begin{center}
+\azul{Marzo - 2009 \hskip 4cm Octubre - 1996}
+\vskip 0.2cm
+%Identificación de Arcos UP/DOWN\\
+{\includegraphics[width=0.49\textwidth]{figuras/Rpoint_6colores_cap4_v3_loop_mapoc_EUVI_up-down_R1105_v2.eps}}
+%{\includegraphics[width=0.48\textwidth]{figuras/Rpoint_6colores_cap4_v3_loop_EUVI_up-down_R1105_v2.eps}}
+%\hskip 0.5cm
+%{\includegraphics[width=0.48\textwidth]{figuras/Rpoint_6colores_cap4_v3_loop_EIT_up-down_R1105_v2.eps}} \ \ 
+{\includegraphics[width=0.49\textwidth]{figuras/Rpoint_6colores_cap4_v3_loop_mapoc_EIT_up-down_R1105_v2.eps}}
+\end{center}
+(Huang et al. 2012, Nuevo et al. 2013, Schiff et al. 2016)
+\vspace{-0.1cm}
+\begin{center}
+\red{\bf UP Loops} ($dT/dr > 0$) \hskip 2cm \azul{\bf DOWN Loops} ($dT/dr < 0$)\\
+{\includegraphics[width=0.45\linewidth]{figuras/error_bar_Tm.up.eps}} 
+%\hskip 0.5cm
+{\includegraphics[width=0.45\linewidth]{figuras/error_bar_Tm.down.eps}}
+\end{center}
+}
+
+%--------------------------------------------------------
+%\frame{ 
+%\vspace{-0.35cm}
+%\titulo{Analysis of Systematic Uncertainties}
+%\footnotesize
+%\begin{center}
+%\vskip 0.25cm
+%xample: Point-Spread-Function of the EUV Detectors.
+%vskip 0.25cm
+%Lunar Transit without / with PSF Deconvolution.\\
+%{\includegraphics[width=0.48\textwidth]{figuras/lunar_transit.eps}}
+%{\includegraphics[width=0.48\textwidth]{figuras/deconvolved.eps}}
+%\vskip 0.25cm
+%Analysis of its Effect on Tomographic Reconstructions:\\
+%{\includegraphics[width=0.32\textwidth]{figuras/compa_decon_nodecon_lowlat_Nebasal.eps}}
+%{\includegraphics[width=0.32\textwidth]{figuras/compa_decon_nodecon_lowlat_lambda_N.eps}}
+%{\includegraphics[width=0.32\textwidth]{figuras/compa_decon_nodecon_lowlat_Te.eps}}
+%\end{center}
+%}
+
+%---------------------------------------------------------------
+\frame{ 
+\vspace{-0.15cm}
+\titulo{Conclusiones}
+\footnotesize
+\begin{itemize}
+\item
+Propagación de incertezas sistemáticas en los resultados de la técnica tomográfica:
+1) Deconvolución de la PSF - EUV\\
+2) Incertezas de calibración radiométrica\\
+3) Incertezas en el nivel de regularización\\
+\salto
+\item El último mínimo fue menos denso y mas frío que el previo.
+%The last minimum was less dense and cooler than the previous one.
+\salto
+\item El Streamer equatorial durante el último mínimo fue mas consistente con equilibrio hidostático isotérmico.
+%The equatorial Streamer during the last minimum was more consistent with isothermal hydrostatic equilibrium.
+\item
+\salto
+Hay presencia de loops down en ambos mínimos, siendo mas dominantes en el último y distribuidos de forma mas homogénea.
+%Down loops are present in both minima, being more dominating in the last one as well as distributed in a more homogeneous fashion.
+
+
+%Comprehensive propagation of systematic uncertainties into DEMT results:\\
+%1) PSF-EUV deconvolution.\\
+%2) EUV Radiometric calibration uncertainty.\\
+%3) Tomography regularization level uncertainty.
+
+\end{itemize}
+}
+
+%----------------------------------
+
+\frame{
+\titulo{Planes futuros}
+\footnotesize
+      \begin{itemize}
+      \item Publicar los resultados de la Comparación de mínimos.
+      \salto
+       \item Estudio comparativo de ciclos solares utilizando tomografía en luz blanca.\\
+       %Comparative study of solar cycles using WL tomography.\\
+       \salto
+       \item Estudio de validación sistemática de modelo MHD Space Weather Modeling Framework(SWMF).\\
+       %Systematic validation study of MHD models, Space Weather Modeling Framework (SWMF).
+       \salto       
+     % \item Models have to account for observed differences between the two periods. Validation studies of MHD models are planned.
+       
+      
+      \end{itemize}
+}
+\iffalse
+\fi
+
+\end{document}
+
+% Slides extra
