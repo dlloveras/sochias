@@ -27,7 +27,7 @@
 \usepackage{geometry}
 %\geometry{landscape}
 \usepackage{multimedia}
-
+\usepackage{verbatim}
 \usepackage{bm}%bold matH
 
 %\usepackage{shade}
@@ -40,12 +40,12 @@
 
 
 \vspace*{-0.75 cm}
-\title[3D Solar Corona]{\bf Estudio Comparativo de M\'inimos Solares con Telescopios EUV}
+\title[3D Solar Corona]{\bf Distribution of Iron Abundance in the Solar Corona from Multi-wavelength Tomography}
 \author[D. Lloveras]
        {{\bf Diego G. Lloveras}\inst{1}\\
        \vskip 0.1cm
        {
-       A.M. Vásquez \inst{1},F. Nuevo\inst{1} y R.A. Frazin\inst{2}
+       A.M. Vásquez \inst{1},E. Landi\inst{2} y R.A. Frazin\inst{2}
        }
       % \\
        }
@@ -65,11 +65,11 @@
   \salto
 %  \vspace{-0.25cm}
   \begin{center}
-\framebox{\includegraphics[height=0.15\linewidth]{figuras/logo_IAFE.eps}}
+\framebox{\includegraphics[height=0.15\linewidth]{new_figs/logo_IAFE.eps}}
 %\framebox{\includegraphics[height=0.1\linewidth]{logo_LMSAL.eps}}
-\framebox{\includegraphics[height=0.15\linewidth]{figuras/logo_AOSS.eps}}
+\framebox{\includegraphics[height=0.15\linewidth]{new_figs/logo_AOSS.eps}}
 \salto
-{\bf AAA \textbar \ September-2016 \textbar \ San Juan}
+{\bf Binational AAA-SOCHIAS \textbar \ October-2018 \textbar \ La Serena, Chile}
 \end{center}
   }
 
@@ -83,17 +83,18 @@
 \frame{
 \titulo{La Corona y la relación Sol-Tierra}
 \scriptsize
-\framebox{\includegraphics[width=\linewidth]{figuras/Sun-Earth.eps}}
+\framebox{\includegraphics[width=\linewidth]{new_figs/Sun-Earth.eps}}
 \begin{center}
-La observación y el modelado de la Corona solar resulta de gran relevancia para el entendimiento de la relación Sol-Tierra, ya que en la Corona es donde el viento solar es calentado, acelerado y tienen lugar eventos impulsivos como eyecciones de masa coronal, flares, etc.
+%La observación y el modelado de la Corona solar resulta de gran relevancia para el entendimiento de la relación Sol-Tierra, ya que en la Corona es donde el viento solar es calentado, acelerado y tienen lugar eventos impulsivos como eyecciones de masa coronal, flares, etc.
 
-%Being the place where the solar wind is heated and accelerated, and impulsive events as solar flares and coronal mass ejections are released, observation and modeling of the Solar Corona is of great relevance to advance our understanding of the Sun-Earth environment.
+Being the place where the solar wind is heated and accelerated, and impulsive events as solar flares and coronal mass ejections are released, observation and modeling of the Solar Corona is of great relevance to advance our understanding of the Sun-Earth environment.
 \end{center}
 }
+
 %-------------------------------------------------------------------
 
 \frame{
-\titulo{Estructura del Sol}
+\titulo{Solar Structure}
 \scriptsize
 \begin{columns}
 \column{0.5\textwidth}
@@ -105,7 +106,7 @@ La observación y el modelado de la Corona solar resulta de gran relevancia para
 %\end{itemize}
 \vspace{0.55cm}
 \begin{center}
-{\includegraphics[width=0.9\textwidth]{figuras/SolarStructure.eps}}
+{\includegraphics[width=0.9\textwidth]{new_figs/SolarStructure.eps}}
 \end{center}
 \column{0.55\textwidth}
 \ \hskip 1cm \azul{Atmosphere}
@@ -116,31 +117,37 @@ La observación y el modelado de la Corona solar resulta de gran relevancia para
 \item Corona (T $\approx 1-10$\, MK, $n \approx 10^{10-7}\ {\rm cm}^{-3}$)
 \end{itemize}
 \begin{center}
-{\includegraphics[width=0.675\textheight]{figuras/region_transicion_fede.eps}}
+{\includegraphics[width=0.675\textheight]{new_figs/region_transicion_fede.eps}}
 \end{center}
 \end{columns}
 }
 %---------------------------------------------------------------------------
 \frame{
-\titulo{Baja corona}
+\titulo{Low Corona}
 \footnotesize
 \vspace{-0.25cm}
 \begin{itemize}
- \item La baja corona emite eficientemente en el rango EUV.\\
-% The corona is \azul{optically thin} in the UV, \azul{EUV}, X, \azul{WL} ranges.\\
-Las imágenes son proyecciones 2D de estructuras emisoras 3D.
-%Images are thus 2D projections of the underlying 3D emitting structure.
+ %\item La baja corona emite eficientemente en el rango EUV.\\
+ \item The corona is \azul{optically thin} in the UV, \azul{EUV}, X, \azul{WL} ranges.\\
+%Las imágenes son proyecciones 2D de estructuras emisoras 3D.
+\item Images are thus 2D projections of the underlying 3D emitting structure.
 % \salto
 % \item El plasma emisor es governado por el \azul{campo magn\'etico coronal} congelado a la materia, para el cual {no se dispone de mediciones} (que son fotosf\'ericas).
  \mediosalto
-\item Los modelos físicos necesitan información 3D coronal de parámetros $N_e, T_e$.
-%Advancement of physical models is in need of 3D information of the coronal fundamental parameters ${\bf B}, N_e, T_e$.
+%\item Los modelos físicos necesitan información 3D coronal de parámetros $N_e, T_e$.
+\item Advancement of physical models is in need of 3D information of the coronal fundamental parameters ${\bf B}, N_e, T_e$.
 \end{itemize}
 \vspace{0.35cm}
+\azul{\bf Tomography}\\
+\vspace{0.15cm}
+By inverting for the \azul{3D EUV emissivity from time series of images} it allows inferring the 3D $N_e$ and $T_e$ of the global corona.
 \begin{columns}
 \column{0.5\textwidth}
 \begin{center}
-{\includegraphics[height=0.9\textwidth]{figuras/aia_193_fullsun.eps}}
+AIA \\
+{\includegraphics[height=0.3\textwidth]{new_figs/2017_12_15_19_11_15_AIA_171.png}}
+{\includegraphics[height=0.3\textwidth]{new_figs/2017_12_15_19_11_15_AIA_193.png}}
+{\includegraphics[height=0.3\textwidth]{new_figs/2017_12_15_19_11_15_AIA_211.png}}
 %\azul{\bf Stereoscopy}
 %{\includegraphics[height=0.65\textwidth]{figuras/aia_171_loops.eps}}
 %\\
@@ -148,16 +155,50 @@ Las imágenes son proyecciones 2D de estructuras emisoras 3D.
 \end{center}
 \column{0.5\textwidth}
 %\begin{center}
-\azul{\bf Tomografía}\\
-\vspace{0.15cm}
+COSMO K-coronograph
+{\includegraphics[height=0.7\textwidth]{new_figs/20171215_175739_kcor_l15_extavg.eps}}
 %{\includegraphics[height=0.7\textwidth]{figuras/aia_193_fullsun.eps}}
-Invierte una serie temporal de imágenes EUV permitiendo inferir la distribución 3D de $N_e$ y $T_e$ en la baja corona.\\
-(Frazin et al. 2005)
+%Invierte una serie temporal de imágenes EUV permitiendo inferir la distribución 3D de $N_e$ y $T_e$ en la baja corona.\\
+%(Frazin et al. 2005)
 %By inverting for the \azul{3D EUV emissivity from time series of images} it allows inferring the 3D $N_e$ and $T_e$ of the global corona.
 %\end{center}
 \end{columns}
+
+}
+%---------------------------------
+\frame{
+\titulo{Instruments}
+\footnotesize
+
+
+
 }
 
+
+
+
+%---------------------------------
+\frame{
+\titulo{DEMT tomography and K-cor tomography}
+\footnotesize
+Ecuaciones
+
+
+}
+
+
+%---------------------------------
+\frame{
+\titulo{Results}
+\footnotesize
+Mapas de Ne a 2 alturas para ambos instrumentos
+
+
+}
+
+
+
+\begin{comment}
 %----------------> TOMOGRAFIA <------------------------------------------------------
 {
 \setbeamercolor{normal text}{fg=white}
@@ -500,7 +541,7 @@ Hay presencia de loops down en ambos mínimos, siendo mas dominantes en el últi
 }
 \iffalse
 \fi
-
+\end{comment}
 \end{document}
 
 % Slides extra
