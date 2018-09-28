@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  ************************** AVISO IMPORTANTE **************************    %
+%                                                                            %
+%  Este ejemplo define el formato para el envío de contribuciones a las      %
+%  Reuniones Anuales de la Asociación Argentina de Astronomía, a partir      %
+%  de 2014. Los resúmenes enviados serán publicados sin modificaciones       %
+%  en el Cuaderno de Resúmenes de la Asociación (CRAAA).                     %
+%                                                                            %
+%  Los comentarios en este archivo contienen instrucciones sobre el formato  %
+%  obligatorio del mismo. Por favor léalos.                                  %
+%                                                                            %
+%  No se permite el uso de \newcommand ni definiciones particulares de       %
+%  cada autor.                                                               %
+%                                                                            %
+%  Para compilar este archivo, use 'pdflatex <archivo>'.                     %
+%                                                                            %
+%  ************************** IMPORTANT NOTICE **************************    %
+%                                                                            %
+%  This template defines the format for the submission of contributions      %
+%  to the Annual Meetings of the Argentinian Astronomical Association,       %
+%  since 2014. The submitted abstracts will be published without changes     %
+%  in the Abstract Book of the Association (CRAAA).                          %
+%                                                                            %
+%  The comments in this file give instructions about its mandatory format.   %
+%  Please read them.                                                         %
+%                                                                            %
+%  The use of \newcommand and author's definitions are forbidden.            %
+%                                                                            %
+%  To compile this file, use 'pdflatex <filename>'.                          %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[craaa]{baaa}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  Paquetes de LaTeX necesarios, por favor no modifique estos comandos. En   %
+%  En caso de que su editor de texto codifique los archivos en un formato    %
+%  distinto a UTF8, cambie la opción correspondiente del paquete 'inputenc'. %
+%                                                                            %
+%  Needed LaTeX packages, please do not change these commands. If your text  %
+%  editor encodes files in a format different than UTF8, change the          %
+%  corresponding option of the package 'inputenc'.                           %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\usepackage[pdftex]{hyperref}
+\usepackage{helvet}
+\usepackage{afterpage}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+% Datos de la publicación, no deben ser cambiados.                           %
+%                                                                            %
+% Journal data, please do not change them.                                   %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\journalvol{1}
+\journalyear{2018}
+\journaleditors{P. Benaglia, C. Artale, N. Padilla, R. Gamen \& M. Lares}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  Seleccione el idioma de su contribución:                                  %
+%                                                                            %
+%  Select the languague of your contribution:                                %
+%                                                                            %
+%  0: Castellano / Spanish                                                   %
+%  1: Inglés / English                                                       %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\contriblanguage{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  Seleccione el tipo de contribución solicitada:                            %
+%                                                                            %
+%  Select the requested contribution type:                                   %
+%                                                                            %
+%  1: Presentación mural / Poster                                            %
+%  2: Presentación oral / Oral contribution                                  %
+%  3: Informe invitado / Invited report                                      %
+%  4: Mesa redonda / Round table                                             %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\contribtype{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  Seleccione el Area tematica de su contribucion:                           %
+%                                                                            %
+%  Select the thematic area of your contribution:                            %
+%                                                                            %
+%  11 [AEC]: Astrofísica Extragaláctica y Cosmología /                       %
+%           Extragalactic Astrophysics and Cosmology                         %
+%  12 [EG]: Estructura Galáctica / Galactic Structure                        %
+%  13 [AE]: Astrofísica Estelar / Stellar Astrophysics                       %
+%  14 [SE]: Sistemas Estelares / Stellar Systems                             %
+%  15 [ICSA]: Instrumentación y Caracterización de Sitios Astronómicos /     %
+%            Instrumentation and Astronomical Site Characterization          %
+%  16 [MI]: Medio Interestelar / Interstellar Medium                         %
+%  17 [OCPAE]: Objetos Compactos y Procesos de Altas Energías /              %
+%             Compact Objetcs and High-Energy Processes                      %
+%  18 [SH]: Sol y Heliosfera / Sun and Heliosphere                           %
+%  19 [SSE]: Sistemas Solar y Extrasolares / Solar and Extrasolar Systems    %
+%  21 [HEDA]: Historia, Enseñanza y Divulgación de la Astronomía /           %
+%             History, Teaching and Spreading of Astronomy                   %
+%  22 [O]: Otros / Other Topics                                              %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thematicarea{18}
+
+\title{Distribution of Iron Abundance in the Solar Corona from Multi-wavelength Tomography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  Lista de autores. Los nombres de los autores deben estar separados por    %
+%  comas, y deben tener el formato Autor A.E. (apellido(s), iniciales;  sin  %
+%  coma entre apellido e iniciales ni espacios entre las iniciales).         %
+%                                                                            %
+%  Author list. Authors' names must be separated by commas, and stick to     %
+%  the format Author A.E. (Family name, initials, without commas between     %
+%  name and the initials or blanks between the initials).                    %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author{Diego G. Lloveras\inst{1}, Alberto M. Vásquez\inst{1}, Enrico Landi\inst{2}, Richard A. Frazin\inst{2}.}
+
+\institute{ Instituto de Astronomía y Física del Espacio (CONICET-UBA), CC 67 - Suc 28, Ciudad de Buenos Aires, Argentina. \and Department of Climate and Space Sciences and Engineering (University of Michigan), Ann Arbor, MI 48109, USA.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  El resumen puede estar escrito en castellano o inglés, a elección del     %
+%  autor.                                                                    %
+%                                                                            %
+%  The abstract can be written in Spanish or English, at the author's        %
+%  choice.                                                                   %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\abstract{
+Solar rotational tomography (SRT) is an observational technique of the solar corona that allows reconstruction of the three-dimensional (3D) distribution of some of its fundamental physical parameters at a global scale. In particular, it allows determination of the 3D distribution of the coronal electron density. Applied to white-light data, SRT density results are of an absolute nature, while applied to extreme ultraviolet (EUV) data they scale with the square root of the iron (Fe) abundance. EUV tomography is routinely applied to EUVI/STEREO and AIA/SDO data, covering the heliocentric height range 1.02 to 1.25 Rsun. That height range overlaps the field of view of the white light KCOR/HAO coronagraph, which covers the height range 1.05 to 3.0 Rsun. In this work we present first results of comparing simultaneous tomographic reconstructions of the coronal electron density based on the aforementioned instruments. We study the distribution of Fe abundance in both magnetically open and closed field structures. Our effort aims at helping to determine the absolute value of the First Ionization Potential (FIP) bias, discriminating whether the FIP effect consists of an enhancement of low-FIP elements, a depletion of high-FIP elements, or a combination of both.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  Seleccione las palabras clave que describen su contribución. Las mismas   %
+%  son obligatorias, y deben tomarse de la lista de la American Astronomical %
+%  Society (AAS), que se encuentra en la página web indicada abajo.          %
+%                                                                            %
+%  Select the keywords that describe your contribution. They are mandatory,  %
+%  and must be taken from the list of the American Astronomical Society      %
+%  (AAS), which is available at the webpage quoted below.                    %
+%                                                                            %
+%  https://aas.org/authors/astronomical-subject-keywords-update-august-2013  %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\keywords{Sun: abundances  --- Sun: corona --- Sun: magnetic fields }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+% Por favor provea una dirección de e-mail de contacto para los lectores.    %
+%                                                                            %
+% Please provide a contact e-mail address for readers.                       %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\contact{editor.baaa@gmail.com}
+  \vskip 105pt
+\maketitle
+
+\end{document}

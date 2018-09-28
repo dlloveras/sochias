@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  ************************** AVISO IMPORTANTE **************************    %
+%                                                                            %
+%  Este ejemplo define el formato para el envío de contribuciones a las      %
+%  Reuniones Anuales de la Asociación Argentina de Astronomía, a partir      %
+%  de 2014. Los resúmenes enviados serán publicados sin modificaciones       %
+%  en el Cuaderno de Resúmenes de la Asociación (CRAAA).                     %
+%                                                                            %
+%  Los comentarios en este archivo contienen instrucciones sobre el formato  %
+%  obligatorio del mismo. Por favor léalos.                                  %
+%                                                                            %
+%  No se permite el uso de \newcommand ni definiciones particulares de       %
+%  cada autor.                                                               %
+%                                                                            %
+%  Para compilar este archivo, use 'pdflatex <archivo>'.                     %
+%                                                                            %
+%  ************************** IMPORTANT NOTICE **************************    %
+%                                                                            %
+%  This template defines the format for the submission of contributions      %
+%  to the Annual Meetings of the Argentinian Astronomical Association,       %
+%  since 2014. The submitted abstracts will be published without changes     %
+%  in the Abstract Book of the Association (CRAAA).                          %
+%                                                                            %
+%  The comments in this file give instructions about its mandatory format.   %
+%  Please read them.                                                         %
+%                                                                            %
+%  The use of \newcommand and author's definitions are forbidden.            %
+%                                                                            %
+%  To compile this file, use 'pdflatex <filename>'.                          %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[craaa]{baaa}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  Paquetes de LaTeX necesarios, por favor no modifique estos comandos. En   %
+%  En caso de que su editor de texto codifique los archivos en un formato    %
+%  distinto a UTF8, cambie la opción correspondiente del paquete 'inputenc'. %
+%                                                                            %
+%  Needed LaTeX packages, please do not change these commands. If your text  %
+%  editor encodes files in a format different than UTF8, change the          %
+%  corresponding option of the package 'inputenc'.                           %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\usepackage[pdftex]{hyperref}
+\usepackage{helvet}
+\usepackage{afterpage}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+% Datos de la publicación, no deben ser cambiados.                           %
+%                                                                            %
+% Journal data, please do not change them.                                   %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\journalvol{1}
+\journalyear{2018}
+\journaleditors{P. Benaglia, C. Artale, N. Padilla, R. Gamen \& M. Lares}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  Seleccione el idioma de su contribución:                                  %
+%                                                                            %
+%  Select the languague of your contribution:                                %
+%                                                                            %
+%  0: Castellano / Spanish                                                   %
+%  1: Inglés / English                                                       %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\contriblanguage{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  Seleccione el tipo de contribución solicitada:                            %
+%                                                                            %
+%  Select the requested contribution type:                                   %
+%                                                                            %
+%  1: Presentación mural / Poster                                            %
+%  2: Presentación oral / Oral contribution                                  %
+%  3: Informe invitado / Invited report                                      %
+%  4: Mesa redonda / Round table                                             %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\contribtype{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  Seleccione el Area tematica de su contribucion:                           %
+%                                                                            %
+%  Select the thematic area of your contribution:                            %
+%                                                                            %
+%  11 [AEC]: Astrofísica Extragaláctica y Cosmología /                       %
+%           Extragalactic Astrophysics and Cosmology                         %
+%  12 [EG]: Estructura Galáctica / Galactic Structure                        %
+%  13 [AE]: Astrofísica Estelar / Stellar Astrophysics                       %
+%  14 [SE]: Sistemas Estelares / Stellar Systems                             %
+%  15 [ICSA]: Instrumentación y Caracterización de Sitios Astronómicos /     %
+%            Instrumentation and Astronomical Site Characterization          %
+%  16 [MI]: Medio Interestelar / Interstellar Medium                         %
+%  17 [OCPAE]: Objetos Compactos y Procesos de Altas Energías /              %
+%             Compact Objetcs and High-Energy Processes                      %
+%  18 [SH]: Sol y Heliosfera / Sun and Heliosphere                           %
+%  19 [SSE]: Sistemas Solar y Extrasolares / Solar and Extrasolar Systems    %
+%  21 [HEDA]: Historia, Enseñanza y Divulgación de la Astronomía /           %
+%             History, Teaching and Spreading of Astronomy                   %
+%  22 [O]: Otros / Other Topics                                              %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thematicarea{22}
+
+\title{TÍTULO}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  Lista de autores. Los nombres de los autores deben estar separados por    %
+%  comas, y deben tener el formato Autor A.E. (apellido(s), iniciales;  sin  %
+%  coma entre apellido e iniciales ni espacios entre las iniciales).         %
+%                                                                            %
+%  Author list. Authors' names must be separated by commas, and stick to     %
+%  the format Author A.E. (Family name, initials, without commas between     %
+%  name and the initials or blanks between the initials).                    %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author{Autor1 I.\inst{1}, Autor2 I.\inst{2}}
+
+\institute{ INSTITUTO1 \and INSTITUTO2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  El resumen puede estar escrito en castellano o inglés, a elección del     %
+%  autor.                                                                    %
+%                                                                            %
+%  The abstract can be written in Spanish or English, at the author's        %
+%  choice.                                                                   %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\abstract{
+SU RESUMEN AQUI
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+%  Seleccione las palabras clave que describen su contribución. Las mismas   %
+%  son obligatorias, y deben tomarse de la lista de la American Astronomical %
+%  Society (AAS), que se encuentra en la página web indicada abajo.          %
+%                                                                            %
+%  Select the keywords that describe your contribution. They are mandatory,  %
+%  and must be taken from the list of the American Astronomical Society      %
+%  (AAS), which is available at the webpage quoted below.                    %
+%                                                                            %
+%  https://aas.org/authors/astronomical-subject-keywords-update-august-2013  %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\keywords{keyword~1 --- keyword~2 --- keyword~3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                            %
+% Por favor provea una dirección de e-mail de contacto para los lectores.    %
+%                                                                            %
+% Please provide a contact e-mail address for readers.                       %
+%                                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\contact{editor.baaa@gmail.com}
+  \vskip 105pt
+\maketitle
+
+\end{document}

@@ -1,0 +1,9 @@
+
+Distribution of Iron Abundance in the Solar Corona from Multi-wavelength Tomography.
+
+Solar rotational tomography (SRT) is an observational technique of the solar corona that allows reconstruction of the three-dimensional (3D) distribution of some of its fundamental physical parameters at a global scale. In particular, it allows determination of the 3D distribution of the coronal electron density. Applied to white-light data, SRT density results are of an absolute nature, while applied to extreme ultraviolet (EUV) data they scale with the square root of the iron (Fe) abundance. EUV tomography is routinely applied to EUVI/STEREO and AIA/SDO data, covering the heliocentric height range 1.02 to 1.25 Rsun. That height range overlaps the field of view of the white light KCOR/HAO coronagraph, which covers the height range 1.05 to 3.0 Rsun. In this work we present first results of comparing simultaneous tomographic reconstructions of the coronal electron density based on the aforementioned instruments. We study the distribution of Fe abundance in both magnetically open and closed field structures. Our effort aims at helping to determine the absolute value of the First Ionization Potential (FIP) bias, discriminating whether the FIP effect consists of an enhancement of low-FIP elements, a depletion of high-FIP elements, or a combination of both.
+
+Diego G. Lloveras (1), Alberto M. Vásquez (1), Enrico Landi (2), and Richard A. Frazin (2)
+
+(1) Instituto de Astronomía y Física del Espacio (CONICET-UBA), CC 67 - Suc 28, Ciudad de Buenos Aires, Argentina.
+(2) Department of Climate and Space Sciences and Engineering (University of Michigan), Ann Arbor, MI 48109, USA.
