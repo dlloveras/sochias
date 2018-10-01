@@ -1,0 +1,353 @@
+
+% Defino clases de secciones en ESPAÑOL
+\def\chaptername{Cap\'\i tulo}
+\def\abstractname{Resumen}
+\def\contentsname{Contenidos}
+\def\bibname{Bibliograf\'\i a}
+\def\appendixname{Ap\'endice}
+\def\tablename{\textbf{Tabla}}
+\def\figurename{\textbf{Figura}}
+%\usepackage[dvips]{graphics,color,epsfig}
+%\usepackage{pst-all}
+%\usepackage{pstricks}
+%\topmargin=-2cm  
+
+% Defino formatos
+\def\titulo#1{\frametitle{{\ \hfill {\bf #1}}}}
+\def\figu#1{\shadowbox{#1}}
+
+%EStilo
+%\input{epsf.sty}
+
+%Paquetes a utilizar
+
+%\usepackage{amssymb} % Math
+%\usepackage{graphicx}
+%\usepackage{float}
+%%\usepackage{wrapfig}
+%%\usepackage{deluxetable}
+
+\pagenumbering{arabic}
+%\usepackage[dvips]{graphics,color}
+%\usepackage{natbib}
+%\usepackage{amssymb} % Math
+%\usepackage{amsmath} % Math
+%%\usepackage{dsfont} % Math
+%\usepackage{float}
+%\usepackage{graphicx}
+%%\usepackage{wrapfig}
+%\usepackage{pst-all}
+%%\usepackage{multirow} % Multi filas
+
+%Separacion silabica:
+%%\usepackage[T1]{babel} % silabas y hyphenation
+%\hyphenation{e-vi-den-cia}
+%\hyphenation{an-te-rio-res}
+
+% Control de Márgenes
+
+%-------------------- Comandos de los autores ----------------------------
+
+% Nombres de Journals
+\newcommand{\araa}{Annu. Rev. Astron. Astrophys.}
+\newcommand{\solphys}{Solar Phys.}
+\newcommand{\aapr}{Astron. Astrophys. Rev.}
+\newcommand{\aaps}{Astron. Astrophys. Sup. Ser.}
+\newcommand{\jastp}{Jour. Atmos. Solar-Terrestrial Phys.}
+\newcommand{\pasj}{Pub. Astron. Soc. Japan}
+\newcommand{\etal}{et al.\ }
+\newcommand{\ha}{H$\alpha$ }
+\newcommand{\aap}{Astron. \& Astrophys.}
+\newcommand{\apjs}{Astrophys J. Sup.}
+\newcommand{\jgr}{Journal of Geophys. Res.}
+\newcommand{\grl}{Geophys. Res. Let.}
+\newcommand{\pre}{Physical Rev. E}
+\newcommand{\adv}{Adv. in Space Res.}
+\newcommand{\SpaceS}{Space Science Reviews}
+\newcommand{\planss}{Planet. Space Sci.}
+\newcommand{\nat}{Nature}
+\newcommand{\apj}{The Astrophysical Journal}
+\newcommand{\apjS}{The Astrophysical Journal Supplement}
+\newcommand{\apjl}{The Astrophysical Journal Letters}
+\newcommand{\mnras}{MNRAS}
+\newcommand{\pasp}{Publications of the Astronomical Society of the Pacific}
+\newcommand{\apss}{Astrophys. Space Sci.}
+
+% Formato
+\def\salto{\vskip 0.3cm}
+\def\mediosalto{\vskip 0.15cm}
+
+% Math:
+\def\deg{$^\circ$}
+\def\rsun{R$_{\odot}$}
+\def\bB{\mathbf{B}}
+\def\bE{\mathbf{E}}
+\def\dpar#1#2{\frac{\partial#1}{\partial#2}}
+%color:
+\def\red#1{{\textcolor{red}{#1}}}
+\def\azul#1{{\textcolor{blue}{#1}}}
+
+\def\Figura#1{Figura \ref{#1}}
+\def\Figuras#1#2{Figuras \ref{#1} a \ref{#2}}
+\def\Figurasy#1#2{Figuras \ref{#1} y \ref{#2}}
+\def\Tabla#1{Tabla \ref{#1}}
+\def\Eq#1{Ecuaci\'on (\ref{#1})}
+\def\Eqs#1#2{Ecuaciones (\ref{#1})-(\ref{#2})}
+\def\Eqn#1{Ecuaci\'on (\ref{#1})}
+\def\eqsy#1#2{Ecuaciones (\ref{#1}) y (\ref{#2})}
+
+\def\exp{{\rm exp}}
+\def\ln{{\rm ln}}
+\def\sin#1{{\rm sen}(#1)}
+\def\cos#1{{\rm cos}(#1)}
+\def\sec{{\rm sec}}
+\def\erg{{\rm erg}}
+\def\cm{{\rm cm}}
+\def\km{{\rm km}}
+\def\sr{{\rm sr}}
+\def\Hz{{\rm Hz}}
+\def\GHz{{\rm GHz}}
+\def\kev{{\rm kev}}
+\def\sfu{{\rm SFU}}
+\def\K{{\rm K}}
+\def\MK{{\rm MK}}
+\def\AU{{\rm UA}}
+\def\UA{{\rm UA}}
+\def\Log10{{\rm log_{10}}}
+\def\G{{\rm G}}
+\def\gsun{g_{\odot}}
+\def\Rsun{R_{\odot}}
+\def\Msun{ M_{\odot}}
+\def\Ne{N_\mathrm{e}}
+\def\NH{N_\mathrm{H}}
+\def\NHe{N_\mathrm{He}}
+\def\me{m_\mathrm{e}}
+\def\mH{m_\mathrm{H}}
+\def\mHe{m_\mathrm{He}}
+\def\Tm{T_m}
+\def\Tfit{T_{\rm fit}}
+\def\Tefit{T_{e,{\rm fit}}}
+\def\Te{T_{\rm e}}
+\def\TH{T_{\rm H}}
+\def\THe{T_{\rm He}}
+\def\l{\lambda_{{\rm N}}}
+\def\WT{W_{T}}
+\def\aTm{\left<\Tm\right>}
+\def\dT{\Delta T}
+\def\emisin{\zeta_k^{\rm (syn)}}
+\def\emitom{\zeta_k^{\rm(tom)}}
+
+\def\fa{f_{\alpha} ({\bf x},{\bf w},t)}
+\def\ffa{f_\alpha}
+\def\xt{({\bf x},t)}
+\def\vt{({\bf v},t)}
+\def\xw{({\bf x},{\bf w})}
+\def\xwt{({\bf x},{\bf w},t)}
+\def\fa{f_\alpha}
+\def\ww{{\bf w}}
+\def\xx{{\bf x}}
+\def\uu{{\bf u}}
+\def\kk{{\bf k}}
+\def\V{{\bf V}}
+\def\ga{{\bf \Gamma}}
+
+\def\lD{\lambda_D}
+\def\ve{v_{Te}}
+\def\we{\omega_e}
+%\def\me{m_e}
+
+\def\dgdv{ \frac{\partial g}{\partial v} }
+
+\def\dndt{ \frac{\partial n}{\partial t} }
+\def\drhodt{ \frac{\partial \rho}{\partial t} }
+
+\def\dfdt{ {{\partial f} \over {\partial t}} }
+\def\dfdx{ {{\partial f} \over {\partial \xx}} }
+\def\dfdw{ {{\partial f} \over {\partial \ww}} }
+
+\def\ddv{ {{\partial} \over {\partial v}} }
+\def\ddt{ {{\partial} \over {\partial t}} }
+\def\ddx{ {{\partial} \over {\partial \xx}} }
+\def\ddw{ {{\partial} \over {\partial \ww}} }
+
+\def\ep{\epsilon}
+\def\al{\alpha}
+\def\om{\omega}
+\def\EF{{\bf E}}
+\def\BF{{\bf B}}
+\def\dl{\lambda_D}
+
+\def\wp{\om_{pe}}
+\def\P{\buildrel =\over P}
+
+\def\intindef{\int_{0}^{\infty}}
+%-----------Albert's-----------------
+\def\rmax{$R_{\rm max}$}
+\def\Nrad{N_r}
+\def\Nlat{N_\theta}
+\def\Nlon{N_\phi}
+\def\bzeta{\boldsymbol{\zeta}}
+\def\bI{{\boldsymbol{I}}}
+\def\bW{{\bf W}}
+\def\bp{{\boldsymbol{p}}}
+\def\bR{{\bf R}}
+\def\AFe{A_{\rm Fe}}
+\def\br{{\bf r}}
+\def\bl{{\boldsymbol{\lambda}}}
+\def\Tab#1{Tabla \ref{#1}}
+\def\Tmin{T_{\rm min}}
+\def\Tmax{T_{\rm max}}
+\def\intmm{\int_{\Tmin}^{\Tmax}}
+
+%------------------------de albert
+
+%---------- Author's commands---------------------------------
+
+\def\bu{\textcolor{red}{\textbullet~}}
+\def\tr{\bu}
+\def\bbu{\textbullet~}
+\def\btr{\textcolor{blue}{$\triangleright$~}}
+\def\cmsq{cm$^2$}
+\def\cmcu{cm$^3$}
+\def\azul#1{\textcolor{blue}{#1}}
+\def\rojo#1{\textcolor{red}{#1}}
+\def\verde#1{\textcolor{green}{#1}}
+\def\orange#1{\textcolor{orange}{#1}}
+\colorlet{green}{green!60!gray}
+
+
+
+
+\def\rsun{R$_{\rm SUN}$}
+\def\bA{{\bf A}}
+\def\ba{{\boldsymbol{a}}}
+\def\bB{{\bf B}}
+\def\bb{{\bf b}}
+\def\bC{{\bf C}}
+\newcommand{\dd}{\mathrm{d}}
+\def\bD{{\bf D}}
+\def\bd{{\bf d}}
+\def\be{{\boldsymbol{e}}}
+\def\bF{{\bf F}}
+\def\bff{{\bf f}}
+\def\bg{{\bf g}}
+\def\bG{{\bf G}}
+\def\bh{{\bf h}}
+\def\bH{{\bf H}}
+\def\bi{{\bf i}}
+\def\bI{{\boldsymbol{I}}}
+\def\bk{{\bf k}}
+\def\bK{{\bf K}}
+\def\bM{{\bf M}}
+\def\bn{{\boldsymbol{n}}}
+\def\bv{{\boldsymbol{v}}}
+\def\boo{{\boldsymbol{o}}}
+\def\bp{{\boldsymbol{p}}}
+\def\bP{{\bf $P$}}
+\def\bq{{\boldsymbol{q}}}
+\def\bQ{{\bf Q}}
+\def\br{{\boldsymbol{r}}}
+\def\bR{{\bf R}}
+\def\bs{{\bf s}}
+\def\bS{{\bf S}}
+\def\bn{{\bf n}}
+\def\bt{{\bf t}}
+\def\bT{{\bf T}}
+\def\bU{{\bf U}}
+\def\bW{{\bf W}}
+\def\bx{{\bf x}}
+\def\by{{\bf y}}
+\def\bSigma{{\bf \Sigma}}
+\def\bLambda{{\bf \Lambda}}
+\def\blambda{{\bf \lambda}}
+\def\bN{{\bf \mathcal{N}}}
+\def\bchi{\boldsymbol{\chi}}
+\def\bxi{\boldsymbol{\xi}}
+\def\bzeta{\boldsymbol{ \zeta}}
+\newcommand{\lbl}{\mbox{\boldmath $\hat{l}$}}
+\newcommand{\lpl}{\mbox{\boldmath $\hat{p}$}}
+\def\deg{$^\circ$}
+\def\mdeg{^\circ}
+\def\bbp{{\bf p}}
+
+%\def\tr{\textcolor{blue}{$\blacktriangleright$~}}
+\def\bu{\textcolor{blue}{\textbullet~}}
+\def\tr{\bu}
+\def\bbu{\textbullet~}
+
+\def\cmsq{cm$^2$}
+\def\cmcu{cm$^3$}
+
+\def\azul#1{\textcolor{blue}{#1}}
+\def\rojo#1{\textcolor{red}{#1}}
+\def\verde#1{\textcolor{green}{#1}}
+\def\orange#1{\textcolor{orange}{#1}}
+\definecolor{ciano}{cmyk}{1, 0, 0, 0}
+
+\def\sdev{{\rm Sdv}}
+\def\med{{\rm Med}}
+\def\mean{{\rm Mean}}
+\def\MK{{\rm MK}}
+\def\rsun{R$_\odot$}
+\def\mrsun{{\rm R_\odot}}
+\def\avgTe{\left<T_e\right>}
+
+\def\ba#1{\textcolor{blue}{\bf\tt #1}}
+\def\br#1{\textcolor{red}{\bf\tt #1}}
+\def\bg#1{\textcolor{green}{\bf\tt #1}}
+
+\def\lt{$<$}
+\def\gt{$>$}
+
+\def\dT{{\rm d}T}
+\def\ds{{\rm d}s}
+\def\deltat{$\delta$}
+\def\Ne{$N_e$}
+\def\Te{$T_e$}
+\def\lN{$\lambda_N$}
+\def\uNe{$10^8{\rm cm}^{-3}$}
+\def\mdeg{^\circ}
+\def\acs{{\rm ACS}}
+\def\acn{{\rm ACN}}
+\def\mAA{{\rm \AA}}
+\def\mNe{N_e}
+\def\mTe{T_e}
+\def\mrsunsq{{\rm R^2_\odot}}
+\def\corr#1{{\bf #1}}
+\def\rojo#1{\textcolor{red}{#1}}
+
+
+
+
+\def\bL{{\bf L}}
+\def\bE{{\bf E}}
+
+% Author's commands:
+\newcommand{\DT}{\Delta T}
+\newcommand{\Tsyn}{T_{\rm Syn}}
+\newcommand{\Texp}{T_{\rm exp}}
+\newcommand{\seg}{{\rm seg}}
+
+
+%Simbolos
+\def\izquierda{\azul{$\bf\leftarrowtail$}}
+\def\derecha{\azul{$\bf\rightarrowtail$}}
+\def\mrsun{{\rm R_\odot}}
+
+
+\tikzset{
+    myarrow/.style={
+        draw,
+        fill=black,
+        single arrow,
+        minimum height=5ex,
+        maximum width=0.5ex,
+        single arrow head extend=1ex
+    }
+}
+\newcommand{\arrowup}{%
+\tikz [baseline=-0.5ex]{\node [myarrow,rotate=90] {};}
+}
+\newcommand{\arrowdown}{%
+\tikz [baseline=-1ex]{\node [myarrow,rotate=-90] {};}
+}

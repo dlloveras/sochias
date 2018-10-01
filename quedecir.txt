@@ -1,0 +1,32 @@
+
+1)Presentation
+Hello, everyone!
+My name is Diego Lloveras, I'm on my third year PhD. I'm working in the solar physics group at the Institute of astronomy and space physics in Buenos Aires, Argentina.
+
+I'm going to tell you about first results of the fist steps of new investigation branch we started with my advisor Alberto Vasquez and two collaborators Enrico landi and richard frazin from the university of michigan.
+This is a short talk, so my idea is you to have an overview of euv-tom and wl-tom
+
+2) The solar corona is the place where the solar wind is heated and accelerated, there are also impulsive events as solar flares and CMEs, that's why observation and modeling of the solar corona is important to have a better understanding of the sun-earth environment.
+
+In these direction we are trying to validate part of the space weather modeling framework, which is a 3D mhd model.  
+
+3) OK, but first what is the solar corona?
+
+
+4) The main idea of the tomography is taking an entire solar rotation images in 2D of the 3D emitting structures and inverting the emissivity allows inferring the 3D distribution of Te and Ne of the global corona. 
+
+
+Discussion
+
+
+FBE escala proporcionalmente a la LDEM (Eq 21 en el paper del 2009 de la técnica), y la proporcionalidad es a través de Qkl, que por la Ec. (22) es la integral en longitud de onda de psi(lambda) = eta/Ne² dobre las longitudes seleccionadas por el pasabanda phi(lambda). eta(lambda) es la suma de todas las potencias espectrales de todas las lineas, cada una es proporcional a la densidad del ion emisor, que se factoriza como está indicado en la ec. (2-10) de tu tesis, que incluye el factor [X] =N(X)/N(H), la abundancia del elemento correspondient. Para los instrumentos EUV el pasabanda se encarga que SOLO se integre sobre lineas de HIERRO, por lo cual TODOS los términos de eta (y por ende de psi) son proporcionales a [Fe]. En consecuencia Qkl es proporcional a [Fe]. Entonces en la Ecuacion 21:
+
+FBE = Integral dT Qkl(T) LDEM(T)
+
+Entonces, en un dado voxel (FBE dada)la LDEM escala INVERSAMENTE con [Fe]. Como <Ne²> es propto LDEM, entonces:
+
+<Ne²> \propto 1/[Fe].
+
+Todo aquello que el hombre ignora, no existe para él...
+por eso el universo de cada uno se resumen en el tamaño de su saber
+
