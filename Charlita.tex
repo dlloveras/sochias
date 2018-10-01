@@ -40,7 +40,8 @@
 
 
 \vspace*{-0.75 cm}
-\title[3D Solar Corona]{\bf Distribution of Iron Abundance in the Solar Corona from Multi-wavelength Tomography}
+\title[3D Solar Corona]{\bf Multi Tomography in the Solar Corona\\
+      a first approach}
 \author[D. Lloveras]
        {{\bf Diego G. Lloveras}\inst{1}\\
        \vskip 0.1cm
@@ -52,16 +53,14 @@
   \institute[IAFE]
   {
   \inst{1}
-  Instituto de Astronom\'{\i}a y F\'{\i}sica del Espacio \textcolor{blue}{(IAFE)} \\ 
+  Institute of Astronomy and Space Physics \textcolor{blue}{(IAFE)} \\ 
+%  Instituto de Astronom\'{\i}a y F\'{\i}sica del Espacio \textcolor{blue}{(IAFE)} \\ 
   CONICET-UBA, Ciudad de Buenos Aires, Argentina
-%  \and
-%  \inst{2}
-%  Lockheed Martin Solar \& Astrophysics Lab \textcolor{blue}{(LMSAL)}\\
-%  Advanced Technology Center, Palo Alto - California, EEUU
   \and
   \inst{2}
-  Dept. of Atmospheric, Oceanic and Space Sciences \textcolor{blue}{(AOSS)}\\
-  University of Michigan, Ann Arbor - Michigan, EEUU
+%  Dept. of Atmospheric, Oceanic and Space Sciences \textcolor{blue}{(AOSS)}\\
+  Dept. of Climate and Space Sciences and Engineering \textcolor{blue}{(CLaSP)}\\
+  University of Michigan, Ann Arbor - Michigan, USA
   \salto
 %  \vspace{-0.25cm}
   \begin{center}
@@ -92,7 +91,7 @@ Being the place where the solar wind is heated and accelerated, and impulsive ev
 }
 
 %-------------------------------------------------------------------
-
+\begin{comment}
 \frame{
 \titulo{Solar Structure}
 \scriptsize
@@ -121,11 +120,17 @@ Being the place where the solar wind is heated and accelerated, and impulsive ev
 \end{center}
 \end{columns}
 }
+\end{comment}
 %---------------------------------------------------------------------------
 \frame{
-\titulo{Low Corona}
+\titulo{Solar Corona}
 \footnotesize
 \vspace{-0.25cm}
+\begin{center}
+{\includegraphics[width=0.35\textwidth]{new_figs/SolarStructure.eps}}
+{\includegraphics[width=0.45\textwidth]{new_figs/region_transicion_fede.eps}}
+\end{center}
+ Corona (T $\approx 1-10$\, MK, $n \approx 10^{10-7}\ {\rm cm}^{-3}$)
 \begin{itemize}
  %\item La baja corona emite eficientemente en el rango EUV.\\
  \item The corona is \azul{optically thin} in the UV, \azul{EUV}, X, \azul{WL} ranges.\\
@@ -205,7 +210,109 @@ The solar rotation provides the necessary 360\deg view angles.
 \end{center}
 \end{columns}
 }
+%--------------------------------------
+{
+\setbeamercolor{normal text}{fg=white}
+\setbeamercolor{frametitle}{fg=white}
+\usebeamercolor[fg]{normal text}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{new_figs/orbits.eps}}
+\frame{
+\titulo{Full-Sun EUV Space Telescopes}
+\scriptsize
+\vspace{-1.75cm}
+\begin{center}
+%\begin{itemize}
+%\item
+Extreme ultraviolet Imaging Telescope {\bf (EIT)}\\ 
+Solar and Heliospheric Observatory {\bf(SOHO)}\\
+1996-2005. Sun-Earth L1 orbit.
+%\salto
+%\item
+%Transition Region And Coronal Explorer \azul{(TRACE)}. 1998-2010.\\
+%Sun-synchronous low Earth orbit (LEO).
+\salto
+%\item
+Extreme UltraViolet Imager {\bf (EUVI)}\\
+Solar TErrestrial RElations Observatory {\bf(STEREO)}\\ 
+2007-2023. Two 1AU orbits behind and ahead Earth.
+\salto
+%\item
+%Atmospheric Imaging Assembly {\bf (AIA)}\\ 
+%Solar Dynamics Observatory {\bf(SDO)}\\ 
+%2010-2020. Geosynchronic orbit around Earth.
+%\end{itemize}
+\end{center}
+\vspace{-0.5cm}
+\begin{table}[ht]
+%\begin{center}
+\begin{tabular}{llll}
+\hline
+Instrument & EIT  & EUVI \\%& AIA\\
+\hline
+\# Coronal Bands & 3  & 3  \\%& 6\\
+Temperature range (MK) & 
+[0.5,3.0] & [0.5,3.0] \\%& [0.5,15]\\
+F.O.V. (\rsun) & 2.8  & 3.4 \\% & 2.6 \\
+%Image size & $1024^2$ & $2048^2$ & $4096^2$\\
+%Resolution [arc sec; $10^{-3}$\rsun]  & 2.6 & 1.6 & 0.6\\
+\hline
+\end{tabular}
+%\end{center}
+\end{table}
+}
+}
+%-----------------------------------
+\frame{ 
+\vspace{-0.35cm}
+\begin{columns}
+\noindent
+\column{0.075\textwidth}
+\vskip 0.8cm
+{\footnotesize
+\ 171 \AA
+\vskip 1.75cm
+\ 195 \AA
+\vskip 1.65cm
+\ 284 \AA
+}
+\column{\textwidth}
+\begin{center}
+{\footnotesize
+\ \ Data Images \hfill $\rightarrow$ \hfill 3D Band Emissivity \hfill $\rightarrow$ \hfill Synthetic Images\ \ \ \
+}\\
+\framebox{\includegraphics[width=0.95\linewidth]{new_figs/frame_050_test.pdf}}\\
+\footnotesize
+ 1.035 $\mrsun$ \hskip 1cm 1.085 $\mrsun$ \hskip 1cm 1.135 $\mrsun$ \hfil
+\end{center}
+\end{columns}
+\begin{columns}
+ \column{0.4\textwidth}
+ Vásquez et al. (2016)
+ \column{0.6\textwidth}
+\end{columns}
+}
 %---------------------------------
+\frame{ 
+\vspace{-0.05cm}
+\titulo{Tomographic Results}
+\footnotesize
+\begin{columns}
+\column{0.5\textwidth}
+\hfil Minimum 2009 \\ Extreme UltraViolet Imager
+{\includegraphics[width=0.86\textwidth]{new_figs/Ne_1105_cr2081l075_ldem_v3_errorbox_base_test.jpg}}
+%\hskip 0.1cm
+{\includegraphics[width=0.86\textwidth]{new_figs/Tm_1105_cr2081l075_ldem_v3_errorbox_base_test.jpg}}\\
+
+\column{0.5\textwidth}
+\hfil Minimum 1996 \\ Extreme ultraviolet Imaging Telescope
+{\includegraphics[width=0.86\textwidth]{new_figs/Ne_1105_cr1915l075_ldem_v3_errorbox_base_test.jpg}}
+%\hskip 0.1cm
+{\includegraphics[width=0.86\textwidth]{new_figs/Tm_1105_cr1915l075_ldem_v3_errorbox_base_test.jpg}}\\
+\end{columns}
+(Lloveras et al. 2017)
+}
+%---------------------------------
+\begin{comment}
 \frame{
 %\titulo{Instruments}
 \footnotesize
@@ -240,33 +347,7 @@ $\rightarrow$ 3D $<N_{e}>$
 \end{center}
 \end{columns}
 }
-
-
-%---------------------------------
-\frame{
-\titulo{EUV Ne Vs. WL Ne}
-\vspace{-1.cm}
-\footnotesize
-\includegraphics[height=0.34\textheight]{new_figs/map_kcor_1105.eps} 
-\includegraphics[height=0.34\textheight]{new_figs/map_aia_1105.eps}\\
-\includegraphics[height=0.34\textheight]{new_figs/map_kcor_1205.eps}
-\includegraphics[height=0.34\textheight]{new_figs/map_aia_1205.eps}
-
-}
-%--------------------------------------------------
-\frame{
-\includegraphics[height=0.23\textwidth]{new_figs/Average_Radial_Profiles_KCOR-Tom_vs_DEMT_CR2198_Hh_reduced_overreg-Open-region_N.eps}
-\includegraphics[height=0.28\textwidth]{new_figs/comparison_KCOR-Tom_vs_DEMT_CR2198_Hh_reduced_overreg-Open-region_N_range1105-1155_Rsun.eps}\\
-\includegraphics[height=0.23\textwidth]{new_figs/Average_Radial_Profiles_KCOR-Tom_vs_DEMT_CR2198_Hh_reduced_overreg-Quiet-region2.eps}
-\includegraphics[height=0.28\textwidth]{new_figs/comparison_KCOR-Tom_vs_DEMT_CR2198_Hh_reduced_overreg-Quiet-region2_range1105-1195_Rsun.eps}
-}
-%-----------------------------
-
-%---------------------
-\frame{
-\titulo{Discussion}
-
-}
+\end{comment}
 %----------------------------------
 \frame{
 \titulo{DEMT as MHD Validation Tool \azul{\footnotesize (Jin et al. 2012)}}
@@ -295,6 +376,32 @@ Inner Ring (1.00 - 1.25 \rsun): Ratio MHD/DEMT.\\
 %$N_e$ y $T_e$ also validated with spectral analysis (Hinode/EIS, 1.02-1.10 \rsun).
 \end{itemize}
 }
+%---------------------------------
+\frame{
+\titulo{EUV Ne Vs. WL Ne}
+\vspace{-1.cm}
+\footnotesize
+\includegraphics[height=0.34\textheight]{new_figs/map_kcor_1105.eps} 
+\includegraphics[height=0.34\textheight]{new_figs/map_aia_1105.eps}\\
+\includegraphics[height=0.34\textheight]{new_figs/map_kcor_1205.eps}
+\includegraphics[height=0.34\textheight]{new_figs/map_aia_1205.eps}
+
+}
+%--------------------------------------------------
+\frame{
+\includegraphics[height=0.23\textwidth]{new_figs/Average_Radial_Profiles_KCOR-Tom_vs_DEMT_CR2198_Hh_reduced_overreg-Open-region_N.eps}
+\includegraphics[height=0.28\textwidth]{new_figs/comparison_KCOR-Tom_vs_DEMT_CR2198_Hh_reduced_overreg-Open-region_N_range1105-1155_Rsun.eps}\\
+\includegraphics[height=0.23\textwidth]{new_figs/Average_Radial_Profiles_KCOR-Tom_vs_DEMT_CR2198_Hh_reduced_overreg-Quiet-region2.eps}
+\includegraphics[height=0.28\textwidth]{new_figs/comparison_KCOR-Tom_vs_DEMT_CR2198_Hh_reduced_overreg-Quiet-region2_range1105-1195_Rsun.eps}
+}
+%-----------------------------
+
+%---------------------
+\frame{
+\titulo{Discussion}
+
+}
+
 %-----------------------------------------
 \frame{
 \titulo{Future Work}

@@ -4,7 +4,7 @@ Hello, everyone!
 My name is Diego Lloveras, I'm on my third year PhD. I'm working in the solar physics group at the Institute of astronomy and space physics in Buenos Aires, Argentina.
 
 I'm going to tell you about first results of the fist steps of new investigation branch we started with my advisor Alberto Vasquez and two collaborators Enrico landi and richard frazin from the university of michigan.
-This is a short talk, so my idea is you to have an overview of euv-tom and wl-tom
+This is a short talk, so my idea is you to have an idea of what tomopraphy is and what is for and why are we using this technique to study the solar corona.
 
 2) The solar corona is the place where the solar wind is heated and accelerated, there are also impulsive events as solar flares and CMEs, that's why observation and modeling of the solar corona is important to have a better understanding of the sun-earth environment.
 
