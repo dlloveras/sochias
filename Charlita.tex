@@ -40,8 +40,8 @@
 
 
 \vspace*{-0.75 cm}
-\title[3D Solar Corona]{\bf Multi Tomography in the Solar Corona\\
-      a first approach}
+\title[3D Solar Corona]{\bf Multi-Wavelenght Tomography \\
+of the Solar Corona: First Results}
 \author[D. Lloveras]
        {{\bf Diego G. Lloveras}\inst{1}\\
        \vskip 0.1cm
@@ -66,7 +66,7 @@
   \begin{center}
 \framebox{\includegraphics[height=0.15\linewidth]{new_figs/logo_IAFE.eps}}
 %\framebox{\includegraphics[height=0.1\linewidth]{logo_LMSAL.eps}}
-\framebox{\includegraphics[height=0.15\linewidth]{new_figs/logo_AOSS.eps}}
+\framebox{\includegraphics[height=0.15\linewidth]{new_figs/logo_clasp2.eps}}
 \salto
 {\bf Binational AAA-SOCHIAS \textbar \ October-2018 \textbar \ La Serena, Chile}
 \end{center}
@@ -291,6 +291,20 @@ F.O.V. (\rsun) & 2.8  & 3.4 \\% & 2.6 \\
  \column{0.6\textwidth}
 \end{columns}
 }
+%-------------------------------
+\frame{
+\titulo{Characteristic Temperatures of the Solar Corona}
+\footnotesize
+\begin{center}
+EIT/SOHO and EUVI/STEREO \azul{3 bands:} \azul{0.5-2.75 MK}\\
+{AIA/SDO} \azul{4 bands:} \azul{0.5-4.0 MK},\\
+\begin{figure}[ht]
+\figu{\includegraphics[height=0.375\linewidth]{new_figs/panel.eps}}
+\figu{\includegraphics[height=0.375\linewidth]{new_figs/qkl.eps}}
+\end{figure}
+\end{center}
+}
+
 %---------------------------------
 \frame{ 
 \vspace{-0.05cm}
@@ -381,33 +395,60 @@ Inner Ring (1.00 - 1.25 \rsun): Ratio MHD/DEMT.\\
 \titulo{EUV Ne Vs. WL Ne}
 \vspace{-1.cm}
 \footnotesize
-\includegraphics[height=0.34\textheight]{new_figs/map_kcor_1105.eps} 
-\includegraphics[height=0.34\textheight]{new_figs/map_aia_1105.eps}\\
-\includegraphics[height=0.34\textheight]{new_figs/map_kcor_1205.eps}
-\includegraphics[height=0.34\textheight]{new_figs/map_aia_1205.eps}
-
+\begin{center}
+\includegraphics[height=0.5\textheight]{new_figs/map_ne_kcor.eps}\\ 
+\includegraphics[height=0.5\textheight]{new_figs/map_ne_aia.eps}
+\end{center}
+%\includegraphics[height=0.34\textheight]{new_figs/map_kcor_1205.eps}
+%\includegraphics[height=0.34\textheight]{new_figs/map_aia_1205.eps}
 }
 %--------------------------------------------------
 \frame{
-\includegraphics[height=0.23\textwidth]{new_figs/Average_Radial_Profiles_KCOR-Tom_vs_DEMT_CR2198_Hh_reduced_overreg-Open-region_N.eps}
-\includegraphics[height=0.28\textwidth]{new_figs/comparison_KCOR-Tom_vs_DEMT_CR2198_Hh_reduced_overreg-Open-region_N_range1105-1155_Rsun.eps}\\
-\includegraphics[height=0.23\textwidth]{new_figs/Average_Radial_Profiles_KCOR-Tom_vs_DEMT_CR2198_Hh_reduced_overreg-Quiet-region2.eps}
-\includegraphics[height=0.28\textwidth]{new_figs/comparison_KCOR-Tom_vs_DEMT_CR2198_Hh_reduced_overreg-Quiet-region2_range1105-1195_Rsun.eps}
+\begin{center}
+  \azul{Streamer Region}\\
+\includegraphics[height=0.26\textwidth]{new_figs/Average_Radial_Profiles_KCOR-Tom_vs_DEMT_CR2198_Hh_l45_kcor_subreg-Quiet-region1.eps}
+\includegraphics[height=0.26\textwidth]{new_figs/comparison_KCOR-Tom_vs_DEMT_CR2198_Hh_l45_kcor_subreg-Quiet-region1_range1105-1195_Rsun.eps}\\
+\azul{Polar Region}\\
+\includegraphics[height=0.26\textwidth]{new_figs/Average_Radial_Profiles_KCOR-Tom_vs_DEMT_CR2198_Hh_l45_kcor_subreg-Open-region_N.eps}
+\includegraphics[height=0.26\textwidth]{new_figs/comparison_KCOR-Tom_vs_DEMT_CR2198_Hh_l45_kcor_subreg-Open-region_N_range1105-1155_Rsun.eps}
+\end{center}
 }
 %-----------------------------
 
 %---------------------
 \frame{
 \titulo{Discussion}
+\vspace{-1.cm}
+\begin{itemize}
+ \item  $\Eeuv \propto \AvgNE2 = f\,\AvgNe^2$, where \azul{filling factor} is defined as $f\equiv\AvgNE2 / \AvgNe^2$
 
+\item  $\Ewl \propto \AvgNe$
+
+\item  Then: $\AvgNe_{\rm{WL}} / \AvgNe_{\rm{EUV}} \propto \sqrt{f}$
+
+\item  If differences in the results are solely attributed to filling factor: $f\sim 2$ in open region, and $f\sim 4$ in closed region.
+
+\item  Note that: $\SigmaNe^2 \equiv \rm{Var}N_e = \AvgNE2 - \AvgNe^2 = \AvgNe^2 \, (f-1)$
+
+\item  So that: $\SigmaNe / \AvgNe = \sqrt{f-1}$.
+
+\item  Where $f$ is larger (closed region) the density distribution has larger variance.
+\end{itemize}
 }
 
 %-----------------------------------------
 \frame{
 \titulo{Future Work}
+\vspace{-1.cm}
+\begin{itemize}
+ \item  To refine discrimination of different structures we will next trace results along field lines from MHD models.
 
+ \item  Other factor that can explain the observed differences is [Fe].
 
+ \item  This work (in progress) is a first step towards future implementation of \azul{Multi-Instrument Tomography (MIT)}. 
 
+ \item  Future work: MIT aims at using tomographies in WL, EUV and also visible spectral lines (upcoming UCoMP instrument) to simultaneously derive reconstructions for the different physical parameters $\AvgNe, \SigmaNe, f, \rm{[Fe]}$, as well as $\AvgTe, \SigmaTe$. 
+\end{itemize}
 }
 \begin{comment}
 %----------------> TOMOGRAFIA <------------------------------------------------------
