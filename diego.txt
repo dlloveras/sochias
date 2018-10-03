@@ -1,0 +1,38 @@
+
+* Slide 1: "Instituto de Astronomía y Física del Espacio" (ponelo mejor en español para esta charla). SI va en ingés, queda mejor: "Institute for..." (en lugar de "of..".
+Creo que precisás un espacio entre la coma y la "E." de Enrico.
+
+* Slide 8, título: "Example of EUV Tomography"
+
+* Slide 9, Al tope de las dos imagenes pone mejor:
+           "AWSoM / Space Weather Modeling Framework (Univ. of Michigan)." 
+           (cuando lo lees decis: "AWSoM, Alfven Wave Solar Model of the Corona"
+
+* Slide 10, precisa un título. Qué te parece: 
+            "Multi-wavelength Tomography: First Steps."
+
+* Slide 11, Sugiero nuevos nombres para las regiones:
+            Quiet Sun in Streamer Region
+            Subpolar Open Region
+            Las figuras precisan letras el doble de grandes, Van a lucir mucho mejor además los gráficos.
+
+* Slide 12: Antes de cada \item poné: \salto
+            y definí \def\salto{\vskio 0.2 cm}
+            probá 0.25 0 0.15 sino, pero así se te "abren los items"
+   - cuarto item, poné "filling factor $f$:\\", así te quiebra la linea mejor. Además: "subpolar open region" y "quiet sun closed region".
+   -último item: "Wiht this interpretation, where $f$ is larger (quiet sun closed region) the electron density probability distribution has larger variance."
+
+* Slide 13:
+
+Invertiría el orden de los dos primeros items, y haría que el primero diga:
+
+* But other factors can partly explain observed differences, as [Fe].
+
+Además poné también el comando \salto antes de cada \item
+
+Y poné abajo de todo centrado:
+
+"Thanks a lot for your attention!"
+
+
+ 

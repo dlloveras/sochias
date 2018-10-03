@@ -1,0 +1,28 @@
+
+Dear Enrico and Rich,
+
+Next week I will be attending the second Chilean-Argentinean joint annual astronomy meeting, http://sochias.cl/second-binational-meeting-aaa-sochias/, where I will be giving a talk on my recent and current work, involving DEMT and now also KCOR-tomography. It is a 15 min plenary talk, so for me it is quite important to provide context and purpose, so that I get the general audience following me, rather than expanding on too many results. In my context exposition I show my recent solar-minimum results and then a published example of use of DEMT as validation tool, as I will mention there that we are now using those solar minimum results (with Chip) to perform validation of the latest version of AWSoM.
+
+To bring DEMT reconstructions to a similar level of complexity of that of KCOR tomography, we explored several paths. Our best result so far is the one here included, which involved using hollow EUV images for DEMT, over-regularizing DEMT, and under-regularizing KCOR-Tom. We performed cross-validation studies for both DEMT and KCOR-Tom, and obtained in each case an optimal regularization level (lambda_opt) and uncertainty  (sigma_lambda), so here we used:
+
+DEMT: lambda_DEMT \approx lambda_opt_DEMT + sigma_lambda_DEMT 
+KCOR: lambda_KCOR \approx lambda_opt_KCOR - sigma_lambda_KCOR
+
+For this talk I selected a quiet-sun region in the streamer belt, and an open subpolar region in the Northern hemisphere. The results of the quiet sun region is comparable to another quiet region I selected at lower longitudes. Similarly, the result in the open region is similar to the result in the southern open region. See my comments below please.
+
+As you will see the maps look much more comparable. Still, improving this will be key to attempting multi-instrument tomography, and I am going to try a yet improved result:
+
+a) I am going to block the EUV data right at the same height of the KCOR occulter, to cancel out the lower dynamics below the same height.
+
+b) I am downloading all AIA images to produce images with much better signal/noise. This may reduce ZDAs in the FBEs a lot. It will be a fast experiment I will make once I return from Chile.
+
+Once I achieve the most compatible reconstructions I will then perform a comparative analysis of both tomographies but tracing along field lines of the AWSoM model. That will allow a refined statistical analysis. We will probably switch to a more recent rotation for that, as the activity level of the Sun is decreasing, and that always helps tomographic analysis.
+
+After that I will be happy to join Albert in setting up things for going ahead with the idea of Multi-instrument tomography. Albert shared Rich's notes with me and also gave me a first introduction. After thinking about this, I am aware that it is very important to produce the different tomographic products in the most compatible way possible. As said, we will explore this further soon after the meeting.
+
+Let me know what you think of my talk. Thanks.
+
+Diego.
+
+
+
