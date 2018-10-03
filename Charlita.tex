@@ -41,19 +41,19 @@
 
 \vspace*{-0.75 cm}
 \title[3D Solar Corona]{\bf Multi-Wavelenght Tomography \\
-of the Solar Corona: First Results}
+of the Solar Corona: First Steps}
 \author[D. Lloveras]
        {{\bf Diego G. Lloveras}\inst{1}\\
        \vskip 0.1cm
        {
-       A.M. Vásquez \inst{1},E. Landi\inst{2} y R.A. Frazin\inst{2}
+       A.M. Vásquez \inst{1}, E. Landi\inst{2} y R.A. Frazin\inst{2}
        }
       % \\
        }
   \institute[IAFE]
   {
   \inst{1}
-  Institute of Astronomy and Space Physics \textcolor{blue}{(IAFE)} \\ 
+  Institute for Astronomy and Space Physics \textcolor{blue}{(IAFE)} \\ 
 %  Instituto de Astronom\'{\i}a y F\'{\i}sica del Espacio \textcolor{blue}{(IAFE)} \\ 
   CONICET-UBA, Ciudad de Buenos Aires, Argentina
   \and
@@ -68,7 +68,7 @@ of the Solar Corona: First Results}
 %\framebox{\includegraphics[height=0.1\linewidth]{logo_LMSAL.eps}}
 \framebox{\includegraphics[height=0.15\linewidth]{new_figs/logo_clasp2.eps}}
 \salto
-{\bf Binational AAA-SOCHIAS \textbar \ October-2018 \textbar \ La Serena, Chile}
+{\bf Second Binational AAA-SOCHIAS \textbar \ October-2018 \textbar \ La Serena, Chile}
 \end{center}
   }
 
@@ -313,7 +313,7 @@ EIT/SOHO and EUVI/STEREO \azul{3 bands:} \azul{0.5-2.75 MK}\\
 %---------------------------------
 \frame{ 
 \vspace{-0.05cm}
-\titulo{Tomographic Results}
+\titulo{Example of EUV Tomography}
 \footnotesize
 
 \begin{center}
@@ -373,7 +373,8 @@ $\rightarrow$ 3D $<N_{e}>$
 \footnotesize
 \vspace{-0.25cm}
 \begin{center}
-2 Temp MHD Model of the Space Weather Modeling Framework (CLASP)
+ AWSoM / Space Weather Modeling Framework (Univ. of Michigan)
+%2 Temp MHD Model of the Space Weather Modeling Framework (CLASP)
 \vspace{-0.5cm}
 \begin{columns}
 \column{0.5\textwidth}
@@ -397,12 +398,13 @@ Inner Ring (1.00 - 1.25 \rsun): Ratio MHD/DEMT.\\
 }
 %---------------------------------
 \frame{
-\titulo{EUV Ne Vs. WL Ne}
-\vspace{-1.cm}
+%\titulo{EUV Ne Vs. WL Ne}
+%\vspace{-1.cm}
 \footnotesize
 \begin{center}
-\includegraphics[height=0.5\textheight]{new_figs/map_ne_kcor.eps}\\ 
-\includegraphics[height=0.5\textheight]{new_figs/map_ne_aia.eps}
+Multi-wavelength Tomography: First Results\\
+\includegraphics[height=0.48\textheight]{new_figs/map_ne_kcor.eps}\\ 
+\includegraphics[height=0.48\textheight]{new_figs/map_ne_aia.eps}
 \end{center}
 %\includegraphics[height=0.34\textheight]{new_figs/map_kcor_1205.eps}
 %\includegraphics[height=0.34\textheight]{new_figs/map_aia_1205.eps}
@@ -410,10 +412,10 @@ Inner Ring (1.00 - 1.25 \rsun): Ratio MHD/DEMT.\\
 %--------------------------------------------------
 \frame{
 \begin{center}
-  \azul{Streamer Region}\\
+  \azul{Quiet Sun in Streamer Region}\\
 \includegraphics[height=0.26\textwidth]{new_figs/Average_Radial_Profiles_KCOR-Tom_vs_DEMT_CR2198_Hh_l45_kcor_subreg-Quiet-region1.eps}
 \includegraphics[height=0.26\textwidth]{new_figs/comparison_KCOR-Tom_vs_DEMT_CR2198_Hh_l45_kcor_subreg-Quiet-region1_range1105-1195_Rsun.eps}\\
-\azul{Polar Region}\\
+\azul{Subpolar Open Region}\\
 \includegraphics[height=0.26\textwidth]{new_figs/Average_Radial_Profiles_KCOR-Tom_vs_DEMT_CR2198_Hh_l45_kcor_subreg-Open-region_N.eps}
 \includegraphics[height=0.26\textwidth]{new_figs/comparison_KCOR-Tom_vs_DEMT_CR2198_Hh_l45_kcor_subreg-Open-region_N_range1105-1155_Rsun.eps}
 \end{center}
@@ -423,37 +425,43 @@ Inner Ring (1.00 - 1.25 \rsun): Ratio MHD/DEMT.\\
 %---------------------
 \frame{
 \titulo{Discussion}
-\vspace{-1.cm}
+\vspace{-0.5cm}
 \begin{itemize}
  \item  $\Eeuv \propto \AvgNE2 = f\,\AvgNe^2$, where \azul{filling factor} is defined as $f\equiv\AvgNE2 / \AvgNe^2$
-
+\salto
 \item  $\Ewl \propto \AvgNe$
-
+\salto
 \item  Then: $\AvgNe_{\rm{WL}} / \AvgNe_{\rm{EUV}} \propto \sqrt{f}$
-
-\item  If differences in the results are solely attributed to filling factor: $f\sim 2$ in open region, and $f\sim 4$ in closed region.
-
+\salto
+\item  If differences in the results are solely attributed to filling factor:\\
+  $f\sim 2$ in subpolar open region, and $f\sim 4$ in quiet sun closed region.
+\salto
 \item  Note that: $\SigmaNe^2 \equiv \rm{Var}N_e = \AvgNE2 - \AvgNe^2 = \AvgNe^2 \, (f-1)$
-
+\salto
 \item  So that: $\SigmaNe / \AvgNe = \sqrt{f-1}$.
-
-\item  Where $f$ is larger (closed region) the density distribution has larger variance.
+\salto
+\item  With this interpretation, where $f$ is larger (quiet sun closed region) the electron density probability distribution has larger variance.
 \end{itemize}
 }
 
 %-----------------------------------------
 \frame{
 \titulo{Future Work}
-\vspace{-1.cm}
+%\vspace{-1.cm}
 \begin{itemize}
- \item  To refine discrimination of different structures we will next trace results along field lines from MHD models.
-
- \item  Other factor that can explain the observed differences is [Fe].
-
+ \item  Other factors can partly explain the observed differences, as [Fe].
+\salto	
+\item  To refine discrimination of different structures we will next trace results along field lines from MHD models.
+\salto
  \item  This work (in progress) is a first step towards future implementation of \azul{Multi-Instrument Tomography (MIT)}. 
-
+\salto
  \item  Future work: MIT aims at using tomographies in WL, EUV and also visible spectral lines (upcoming UCoMP instrument) to simultaneously derive reconstructions for the different physical parameters $\AvgNe, \SigmaNe, f, \rm{[Fe]}$, as well as $\AvgTe, \SigmaTe$. 
+ \salto
 \end{itemize}
+\begin{center}
+ Thanks a lot for your attention!
+\end{center}
+
 }
 \begin{comment}
 %----------------> TOMOGRAFIA <------------------------------------------------------
