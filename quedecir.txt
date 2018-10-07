@@ -13,25 +13,35 @@ The solar corona is the place where the solar wind is heated and accelerated, th
 
 In these direction we are trying to validate part of the space weather modeling framework, which is a 3D mhd model.  
 
-3) The plasma in the solar corona can be found in a width range of density and temperatures. over the chromosphere (the black line) the density decay but the temperature increase due to the coronal heating.
+3) The plasma in the solar corona can be found in a width range of density and temperatures. over the chromosphere (the black line) the density decay a few orders and the temperature increase.
 The corona is optically thin in the extreme ultraviolet range and in white light. We are using both to obtain physical information of the plasma.
 
-We observe the sun through images which of course are 2D projections of 3D emitting structures.
+We observe the sun through images which are 2D projections of 3D emitting structures.
 Advancement of physical models are in need of 3D information of the coronal fundamental parameters like B, N, T and chemical abundances.
 
-To that end we are using a solar rotational tomographic technique.
+4) To that end we are using a solar rotational tomographic technique. The main idea is take images of an entire solar rotation which provides all the lines of sight.
 
-Cecilia told us about the differential emission measure tomographic technique using euv images but with a few changes we have applied a tomographic technique using withe light images. 
+There are several components  in the coronal light, depending on the physical mechanism, in these work we are interested in one hand emission by Ferrum ions, it means using EUV images. We applied the SRT obtaining the 3D band emissivity as a result. Using the differential emission measure technique we obtain 3D reconstruction of the square Ne average and Te reconstruction of the low corona (1.0 a 1.3solar radii). 
+On the other hand is the thomson scattering of photospheric WL. Applying the SRT to a time series of images we obtain a 3D reconstruction of the electron density in a range between 1.1 and 2 solar radii.
+
+5) So, very quickly we are using EUV data from the EUVI on STEREO and EUV data from the AIA on boar SDO. And we are using white light data, in these case from the K-cor on the Mauna Loca Solar Observatory. These is the first time we are trying to compare results using two different instrument using information from different light ranges. Wre decided to use AIA because it has almost the same line of sight that K-cor.
+
+6) Ok, cecilia already told us about demt technique so I'm going to pass these slides very fast.
+Using a time series of images for each band we applied the SRT technique obtaining a 3D reconstruction of the band emissivity in each band. If we integrate these reconstruction along the lines of sights we obtain synthetic Images which are very similar to the data. A detailed analysis of these can be found on vasquez et al 2016.
+
+7) Decir que cada una de estas imagenes en cada banda corresponde a emisividad a diferentes temperaturas. Y que combinando las imagenes sinteticas + las respuestas tecnicas de todas las bandas obtenemos la ldem y que con ella sale proxy densidad y temp.
 
 
-4) The main idea is take images of an entire solar rotation which provides all the lines of sight. 
+8) *ejemplos de mapas de carrington de ne y te a dos alturas utilizando euv images.
+*la linea negra es la frontera entre lineas magneticas abiertas y cerradas. Se observa que la frontera es transversal al gradiente de te y ne.
 
-There are several components  in the coronal light, depending on the physical mechanism.
-One of them is the Corona E which is emission by Ferrum ions, emitting in the EUV range. The results of applying the technique to these images are 3D band emissivity and applying the differencial emission measure technique provides a proxy of the density and electron temperature. These emission is in the range of 1.02 and 1.3 solar radii.
 
-We can observer the K- corona which is in a range from 1.1 to several solar radii. we can observe these range due to the thomson scattering of photospheric white light using coronographs. And the technique results are in these case the density.
 
-5) 
+
+
+
+
+
 
 
 Discussion
