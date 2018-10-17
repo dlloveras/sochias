@@ -128,8 +128,8 @@ Being the place where the solar wind is heated and accelerated, and impulsive ev
 \footnotesize
 \vspace{-0.25cm}
 \begin{center}
-{\includegraphics[width=0.35\textwidth]{new_figs/SolarStructure.eps}}
-{\includegraphics[width=0.45\textwidth]{new_figs/region_transicion_fede.eps}}
+%{\includegraphics[width=0.35\textwidth]{new_figs/SolarStructure.eps}}
+{\includegraphics[width=0.5\textwidth]{new_figs/region_transicion_fede.eps}}
 \end{center}
  Corona (T $\approx 1-10$\, MK, $n \approx 10^{10-7}\ {\rm cm}^{-3}$)
 \begin{itemize}
@@ -143,10 +143,10 @@ Being the place where the solar wind is heated and accelerated, and impulsive ev
 %\item Los modelos físicos necesitan información 3D coronal de parámetros $N_e, T_e$.
 \item Advancement of physical models is in need of 3D information of the coronal fundamental parameters ${\bf B}, N_e, T_e$ and chemical abundances.
 \end{itemize}
-\vspace{0.35cm}
-\azul{\bf Tomography}\\
-\vspace{0.15cm}
-By inverting for the \azul{3D EUV emissivity from time series of images} it allows inferring the 3D $N_e$ and $T_e$ of the global corona.
+%\vspace{0.35cm}
+%\azul{\bf Tomography}\\
+%\vspace{0.15cm}
+%By inverting for the \azul{3D EUV emissivity from time series of images} it allows inferring the 3D $N_e$ and $T_e$ of the global corona.
 %\begin{columns}
 %\column{0.5\textwidth}
 %\begin{center}
@@ -196,7 +196,7 @@ The solar rotation provides the necessary 360\deg view angles.
 \begin{itemize}
 \item \azul{Corona-E:} True coronal emission by ions UV, \azul{EUV} and X.
 \item \azul{SRT-EUV} $\rightarrow$ 3D EUV emissivity  $\rightarrow$\\
-3D $\AvgNe^2$ and $\AvgTe$
+3D $\AvgNE2$ and $\AvgTe$
 \item 1st SRT-EUV: Vásquez et al. 2009; Frazin et al. 2009
 \end{itemize}
 \column{0.4\textwidth}
@@ -293,11 +293,15 @@ Mauna Loa Solar Observatory {\bf(MLSO)}, Hawaii.
  1.035 $\mrsun$ \hskip 1cm 1.085 $\mrsun$ \hskip 1cm 1.135 $\mrsun$ \hfil
 \end{center}
 \end{columns}
-\begin{columns}
- \column{0.4\textwidth}
- Vásquez et al. (2016)
- \column{0.6\textwidth}
-\end{columns}
+%\begin{columns}
+% \column{0.4\textwidth}
+ $
+\azul{I_{k,j}} = \azul{
+\int_{\mathrm{LOS}} \mathrm{d}l} \ 
+\rojo{FBE_k \left(\azul{\br_j(l)}\right)}
+$  \hfill Vásquez et al. (2016)
+% \column{0.6\textwidth}
+%\end{columns}
 }
 %-------------------------------
 \frame{
@@ -311,6 +315,10 @@ EIT/SOHO and EUVI/STEREO \azul{3 bands:} \azul{0.5-2.75 MK}\\
 \figu{\includegraphics[height=0.375\linewidth]{new_figs/qkl.eps}}
 \end{figure}
 \end{center}
+%\tiny
+$\azul{FBE_{k,i} }  =  \azul{\int \mathrm{d}T \  R_k(T)  \rojo{{\sf LDEM}_i(T)} }$ $\rightarrow$
+$\left< N_e^2\right>_i = \int \mathrm{d} T \ \, \rojo{{\sf LDEM}_i(T)}$\\
+\qquad \qquad \qquad \qquad \qquad \qquad \qquad $\rightarrow$ $T_{m,i}   = \frac{1}{\left< N_e^2\right>_i } \int \mathrm{d}T\ T \ \, \rojo{{\sf LDEM}_i(T)}$\\
 }
 
 %---------------------------------
@@ -331,7 +339,7 @@ EIT/SOHO and EUVI/STEREO \azul{3 bands:} \azul{0.5-2.75 MK}\\
 %{\includegraphics[width=0.86\textwidth]{new_figs/Tm_1105_cr1915l075_ldem_v3_errorbox_base_test.jpg}}\\
 {\includegraphics[width=0.46\textwidth]{new_figs/Tm_1105_CR2081.pdf}}
 \end{center}
-(Lloveras et al. 2017) $\rightarrow$ Systematic incertainties in DEMT results $\sim 10 \%$
+(Lloveras et al. 2017) $\rightarrow$ Systematic uncertainties in DEMT results $\sim 10 \%$
 }
 %---------------------------------
 \begin{comment}
@@ -401,7 +409,7 @@ Inner Ring (1.00 - 1.25 \rsun): Ratio MHD/DEMT.\\
 }
 %---------------------------------
 \frame{
-\titulo{Multi-Instrument Tomography: First Results}
+\titulo{Multi-Instrument Tomography (MIT): First Results}
 \vspace{-.2cm}
 \footnotesize
 \begin{center}
@@ -452,6 +460,8 @@ Inner Ring (1.00 - 1.25 \rsun): Ratio MHD/DEMT.\\
 \titulo{Future Work}
 %\vspace{-1.cm}
 \begin{itemize}
+ \item Determination of KCOR-based density error bars (calibration, sky-subtraction).
+ \salto
  \item  Other factors can partly explain the observed differences, as [Fe].
 \salto	
 \item  To refine discrimination of different structures we will next trace results along field lines from MHD models.
@@ -460,6 +470,8 @@ Inner Ring (1.00 - 1.25 \rsun): Ratio MHD/DEMT.\\
 \salto
  \item  Future work: MIT aims at using tomographies in WL, EUV and also visible spectral lines (upcoming UCoMP instrument) to simultaneously derive reconstructions for the different physical parameters $\AvgNe, \SigmaNe, f, \rm{[Fe]}$, as well as $\AvgTe, \SigmaTe$. 
  \salto
+ \item Perform new comparisons for this and other target rotations.
+ 
 \end{itemize}
 \begin{center}
  Thanks a lot for your attention!
